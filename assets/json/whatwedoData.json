@@ -1,0 +1,93 @@
+[
+  {
+    "id": "1",
+    "pageName": "Data Science",
+    "pageUrl": "/data-science",
+    "banner": [
+      {
+        "bannerSubhead": "Data Science",
+        "heading": "Empowering your business with data-driven insights",
+        "description": "Data science is an interdisciplinary field that involves the extraction, analysis, and interpretation of data to gain insights and knowledge. It combines techniques from statistics, mathematics, computer science, and domain-specific knowledge to solve complex problems and make data-driven decisions."
+      }
+    ],
+    "bannerImage": "../assets/images/gif/data-science.gif",
+    "application": {
+      "leftData": {
+        "subhead": "Applications of Data Science",
+        "heading": "Transforming data into insights for a better tomorrow.",
+        "description": "It combines techniques from statistics, mathematics, computer science, and domain-specific knowledge to solve complex problems and make data-driven decisions."
+      },
+      "servicesBoxes": [
+        {
+          "serviceImage": "./assets/images/whatwedo/Heartbeat.svg",
+          "serviceHead": "Health Care",
+          "serviceDescription": "Data science can be used for disease diagnosis, drug discovery, and personalized medicine."
+        },
+        {
+          "serviceImage": "./assets/images/whatwedo/finance.svg",
+          "serviceHead": "Finance",
+          "serviceDescription": "Data science can be used for disease diagnosis, drug discovery, and personalized medicine."
+        },
+        {
+          "serviceImage": "./assets/images/whatwedo/Marketing Growth.svg",
+          "serviceHead": "Marketing",
+          "serviceDescription": "Data science can be used for disease diagnosis, drug discovery, and personalized medicine."
+        },
+        {
+          "serviceImage": "./assets/images/whatwedo/truck.svg",
+          "serviceHead": "Transportation",
+          "serviceDescription": "Data science can be used for disease diagnosis, drug discovery, and personalized medicine."
+        },
+        {
+          "serviceImage": "./assets/images/whatwedo/Energy development.svg",
+          "serviceHead": "Energy",
+          "serviceDescription": "Data science can be used for disease diagnosis, drug discovery, and personalized medicine."
+        },
+        {
+          "serviceImage": "./assets/images/whatwedo/Agriculture.svg",
+          "serviceHead": "Agriculture",
+          "serviceDescription": "Data science can be used for disease diagnosis, drug discovery, and personalized medicine."
+        }
+      ]
+    },
+    "process": {
+      "header": {
+        "subheading": "Data Science Process",
+        "heading": "Unlocking insights, driving results with a rigorous data science process.",
+        "content": "The data science process is an iterative process, meaning that the steps are often repeated until the desired outcome is achieved."
+      },
+      "processBoxes": [
+        {
+          "processImage": "./assets/images/whatwedo/Problem Solving.svg",
+          "processHead": "Problem identification",
+          "processData": "Identify a business problem or question that can be addressed with data."
+        },
+        {
+          "processImage": "./assets/images/whatwedo/Binders.svg",
+          "processHead": "Data collection",
+          "processData": "Collect and gather relevant data from various sources."
+        },
+        {
+          "processImage": "./assets/images/whatwedo/data-preprocessing.svg",
+          "processHead": "Data preprocessing",
+          "processData": "Clean, transform, and prepare the data for analysis."
+        },
+        {
+          "processImage": "./assets/images/whatwedo/Data Analysis.svg",
+          "processHead": "Data analysis",
+          "processData": "Collect and gather relevant data from various sources."
+        },
+        {
+          "processImage": "./assets/images/whatwedo/data-visulization.svg",
+          "processHead": "Data visualisation",
+          "processData": "Collect and gather relevant data from various sources."
+        },
+        {
+          "processImage": "./assets/images/whatwedo/data-deployment.svg",
+          "processHead": "Deployment",
+          "processData": "Collect and gather relevant data from various sources."
+        }
+      ]
+    }
+  }
+]

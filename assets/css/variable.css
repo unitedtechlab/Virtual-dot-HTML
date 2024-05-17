@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&display=swap");
+
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+
+  --primary-100: #03000a;
+  --primary-200: #16151b;
+
+  --secondary-100: #f7f7f8;
+  --secondary-200: #f7f7f81c;
+
+  --ternary-100: #fcd1bb;
+
+  --gray-color: #959499;
+  --border-color: #1a1420;
+  --blue-color: #8f6cef;
+
+  --label-color: #6f6b80;
+
+  --inter-family: "Inter", sans-serif;
+  --Familjen-family: "Familjen Grotesk", sans-serif;
+
+  --h1-font: clamp(48px, 4.167vw, 80px);
+  --h2-font: clamp(38px, 3.75vw, 72px);
+  --h3-font: clamp(32px, 3.125vw, 60px);
+  --h4-font: clamp(28px, 2.813vw, 54px);
+  --h5-font: clamp(18px, 1.25vw, 24px);
+  --h6-font: clamp(14px, 1.042vw, 20px);
+
+  --base-font: clamp(13px, 0.729vw, 14px);
+  --font-md: clamp(14px, 0.833vw, 16px);
+  --font-lg: clamp(20px, 1.563vw, 30px);
+  --font-xl: clamp(30px, 2.083vw, 40px);
+
+  --font-weight-100: 100;
+  --font-weight-200: 200;
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+  --font-weight-bold: bold;
+
+  --display-size-small: 575px;
+  --display-size-medium: 767px;
+  --display-size-large: 991px;
+  --display-size-x-large: 1199px;
+  --display-size-xx-large: 1399px;
+}

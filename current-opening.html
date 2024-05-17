@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Dot | Career - Current open Position</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header-main">
+          <div class="logo">
+            <a href="/">
+              <img
+                src="./assets/images/logo.svg"
+                alt="logo virtualDot"
+                width="155"
+                height="26"
+              />
+            </a>
+          </div>
+          <!-- navmenu -->
+          <button class="nav-btn" id="navbtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav class="navMenu" id="navbar">
+            <ul class="navList">
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="./about.html">About US</a>
+              </li>
+              <li class="hasSubmenu">
+                <a href="#">What We Do</a>
+                <div class="submenu-wrapper">
+                  <div class="container">
+                    <div class="submenu">
+                      <div class="submenu-column">
+                        <div class="submenu-heading">
+                          <p>Our expertise</p>
+                          <span>
+                            We use data + AI to reveal actionable insights and
+                            guide decisions.
+                          </span>
+                        </div>
+                        <ul class="sub-menulist">
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/submenu/Data Science.svg"
+                                alt="submenu icon"
+                              />
+                              <div class="menu-text">
+                                <p>Data Science</p>
+                                <span>
+                                  We specialise in creating custom, scalable
+                                  data science solutions
+                                </span>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/submenu/Representation.svg"
+                                alt="submenu icon"
+                              />
+                              <div class="menu-text">
+                                <p>Data Analytics</p>
+                                <span>
+                                  We often help clients who need to solve
+                                  complex analytic challenges
+                                </span>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/submenu/Artificial Intelligence.svg"
+                                alt="submenu icon"
+                              />
+                              <div class="menu-text">
+                                <p>Artificial Intelligence</p>
+                                <span>
+                                  We use data + AI to reveal actionable insights
+                                  and guide decisions.
+                                </span>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/submenu/Process.svg"
+                                alt="submenu icon"
+                              />
+                              <div class="menu-text">
+                                <p>Machine Learning</p>
+                                <span>
+                                  We use data + AI to reveal actionable insights
+                                  and guide decisions.
+                                </span>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/submenu/learning.svg"
+                                alt="submenu icon"
+                              />
+                              <div class="menu-text">
+                                <p>Deep Learning</p>
+                                <span>
+                                  We use data + AI to reveal actionable insights
+                                  and guide decisions.
+                                </span>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="submenu-column">
+                        <div class="submenu-heading">
+                          <p>Our solutions</p>
+                          <span>
+                            Building interactive tools, integrating information,
+                            and presenting insights to drive meaningful action.
+                          </span>
+                        </div>
+                        <ul class="sub-menulist">
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/submenu/Fraud Alert.svg"
+                                alt="submenu icon"
+                              />
+                              <div class="menu-text">
+                                <p>Fraud Detection</p>
+                                <span>
+                                  Algorithms for detecting anomalies and trends.
+                                </span>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/submenu/Security.svg"
+                                alt="submenu icon"
+                              />
+                              <div class="menu-text">
+                                <p>Security</p>
+                                <span>
+                                  Actionable insights to visualise data, spot
+                                  patterns.
+                                </span>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/submenu/Network Access.svg"
+                                alt="submenu icon"
+                              />
+                              <div class="menu-text">
+                                <p>Network Analysis</p>
+                                <span>
+                                  Analytics for security in essential
+                                  infrastructure.
+                                </span>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/submenu/Health.svg"
+                                alt="submenu icon"
+                              />
+                              <div class="menu-text">
+                                <p>Health Intelligence</p>
+                                <span>
+                                  Identifying high-impact, targeted projects
+                                </span>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="submenu-column">
+                        <div class="submenu-heading">
+                          <p>Other expertise</p>
+                          <span>
+                            Building interactive tools, integrating information,
+                            and presenting insights to drive meaningful action.
+                          </span>
+                        </div>
+                        <ul class="sub-menulist">
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/submenu/Design.svg"
+                                alt="submenu icon"
+                              />
+                              <div class="menu-text">
+                                <p>Design</p>
+                                <span>
+                                  Design thinking is the core of virtual dot.
+                                </span>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img
+                                src="./assets/images/submenu/Development.svg"
+                                alt="submenu icon"
+                              />
+                              <div class="menu-text">
+                                <p>Development</p>
+                                <span> The creation of web applications </span>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="navList">
+              <li class="active">
+                <a href="./career.html">Careers</a>
+              </li>
+              <li>
+                <a href="./contact.html">Connect</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- banner section -->
+      <section class="banner-career section-padding">
+        <div class="container">
+          <div class="career_banner" data-aos="fade-up">
+            <h6>The <span>Virtual Dot</span> team is looking for a</h6>
+            <h1>Full Stack Engineer</h1>
+            <div class="technologies">
+              <ul>
+                <li>Typescript</li>
+                <li>React</li>
+                <li>Next.js</li>
+                <li>WebSocket</li>
+                <li>NodeJS</li>
+                <li>CRDTs</li>
+              </ul>
+            </div>
+            <div class="career-labels">
+              <ul>
+                <li>
+                  <label>🕓 full-time</label>
+                </li>
+                <li>
+                  <label>🌐 Ahmedabad</label>
+                </li>
+              </ul>
+            </div>
+            <div class="btn-sections flex">
+              <a href="#" class="btn btn-blue"> Apply Now </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Career description -->
+      <section class="career-text-section section-padding">
+        <div class="container">
+          <div class="career-text-row">
+            <div class="career-team-box" data-aos="fade-right">
+              <label class="team">The team</label>
+              <div class="career_banner">
+                <h5 class="box-head">Virtual Dot</h5>
+                <div class="user-list">
+                  <ul>
+                    <li>
+                      <img
+                        src="./assets/images/user.jpeg"
+                        alt="user"
+                        width="32"
+                        height="32"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/images/user.jpeg"
+                        alt="user"
+                        width="32"
+                        height="32"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/images/user.jpeg"
+                        alt="user"
+                        width="32"
+                        height="32"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/images/user.jpeg"
+                        alt="user"
+                        width="32"
+                        height="32"
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <div class="career-labels">
+                  <ul>
+                    <li>
+                      <label>👩🏻‍💻 11-20 people</label>
+                    </li>
+                    <li>
+                      <label>🌐 Ahmedabad</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="technologies">
+                  <ul>
+                    <li>Open positions: <b>2</b></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="description-career" data-aos="fade-left">
+              <p>
+                At Virtual Dot, we're building tools to help companies create
+                amazing real-time collaborative products so that people using
+                those products can feel more connected and work better together.
+              </p>
+              <p>
+                Virtual Dot is growing quickly and is backed by some of the best
+                investors including Boldstart, Seedcamp, and individuals who’ve
+                worked at companies like Figma, Github, Vercel, Facebook,
+                Segment, and more.
+              </p>
+              <p>
+                We're looking for <b>Full Stack Engineers</b> who will work
+                closely with our founding team to help define, build, and scale
+                the product to enable us to bring collaborative experiences to
+                life! As an early member of our growing team, you'll also
+                contribute to building a people-first company culture that is
+                aligned to our mission and goals.
+              </p>
+              <p>
+                If this is an endeavor you’d like to be a part of, we'd love to
+                hear from you!
+              </p>
+              <h5>About the role</h5>
+              <ul>
+                <li>
+                  <b>Ship core features.</b> Implement and maintain core
+                  features and infrastructure. We're a small team, so everyone
+                  is touching all parts of the stack with clear
+                  responsibilities.
+                </li>
+                <li>
+                  <b>Take ownership.</b> We aim to create a high-trust
+                  environment where everyone helps define what is most important
+                  to work on and drive initiatives forward.
+                </li>
+                <li>
+                  <b>Be a customer advocate.</b> Everything we do is about
+                  helping our customers. As part of this job, you'll have the
+                  opportunity to work closely with customers and our community
+                  to be their advocate.
+                </li>
+              </ul>
+              <h5>About you</h5>
+              <ul>
+                <li>
+                  <b>Ability to ship high-quality and well-tested features.</b>
+                  Proven and recurring success working as a software engineer in
+                  production environments (typically 4 years experience)
+                  preferably at SaaS or development tool focused companies.
+                </li>
+                <li>
+                  <b>Always learning.</b> A beginner's mind and open interest in
+                  learning new technologies and skills.
+                </li>
+                <li>
+                  <b>Keeping the big picture in mind.</b> Demonstrate pragmatism
+                  and the ability to keep UX and business objectives in mind as
+                  you're building.
+                </li>
+                <li>
+                  <b>Open communication and collaboration skills.</b> As part of
+                  this role, you'll work closely with the team, communicate
+                  openly, give and receive thoughtful feedback.
+                </li>
+                <li>
+                  <b>Located within our ten time-zones.</b> Though we are remote
+                  and default to asynchronous work, opportunities for
+                  synchronous collaboration and connection is a valued way of
+                  working. We are currently looking for teammates within IST -8
+                  hours.
+                </li>
+                <li>
+                  <b>Excited to set a strong cultural foundation.</b> As a small
+                  and growing team, you'll be asked and expected to provide your
+                  feedback and insights in co-creating a culture and company we
+                  are proud of.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- tech stack section -->
+      <section class="techStack-section section-padding gradient-bg">
+        <div class="technology-section-wrapper section-padding-bottom">
+          <div class="container">
+            <div class="heading" data-aos="fade-up">
+              <h4>Tech Stack</h4>
+            </div>
+            <div class="tech-stack-wrapper" data-aos="fade-up">
+              <div class="technology-box">
+                <img
+                  src="./assets/images/technology/github.svg"
+                  alt="technology image"
+                  width="90"
+                  height="32"
+                />
+              </div>
+              <div class="technology-box">
+                <img
+                  src="./assets/images/technology/typescript.svg"
+                  alt="technology image"
+                  width="90"
+                  height="32"
+                />
+              </div>
+              <div class="technology-box">
+                <img
+                  src="./assets/images/technology/react.svg"
+                  alt="technology image"
+                  width="90"
+                  height="32"
+                />
+              </div>
+              <div class="technology-box">
+                <img
+                  src="./assets/images/technology/slack.svg"
+                  alt="technology image"
+                  width="90"
+                  height="32"
+                />
+              </div>
+              <div class="technology-box">
+                <img
+                  src="./assets/images/technology/vercel.svg"
+                  alt="technology image"
+                  width="90"
+                  height="32"
+                />
+              </div>
+              <div class="technology-box">
+                <img
+                  src="./assets/images/technology/mongodb.svg"
+                  alt="technology image"
+                  width="90"
+                  height="32"
+                />
+              </div>
+              <div class="technology-box">
+                <img
+                  src="./assets/images/technology/nextjs.svg"
+                  alt="technology image"
+                  width="90"
+                  height="32"
+                />
+              </div>
+              <div class="technology-box">
+                <img
+                  src="./assets/images/technology/figma.svg"
+                  alt="technology image"
+                  width="90"
+                  height="32"
+                />
+              </div>
+              <div class="technology-box">
+                <img
+                  src="./assets/images/technology/aws.svg"
+                  alt="technology image"
+                  width="90"
+                  height="32"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="join-team" data-aos="fade-up">
+            <h4>Sound interesting? 🤔</h4>
+            <h6>Apply! The Virtual Dot team would love to hear from you.</h6>
+            <div class="btn-sections flex">
+              <a href="#" class="btn btn-blue">
+                <svg
+                  width="30"
+                  height="28"
+                  viewBox="0 0 30 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.3711 27.6758C17.4323 27.6758 16.4525 27.6576 15.4316 27.6211C14.4199 27.5846 13.3991 27.5072 12.3691 27.3887C11.3483 27.2793 10.3411 27.1152 9.34766 26.8965C8.35417 26.6777 7.41081 26.3861 6.51758 26.0215C5.62435 25.6569 4.79948 25.2103 4.04297 24.6816C3.28646 24.1621 2.63021 23.5332 2.07422 22.7949C1.51823 22.0566 1.08529 21.2044 0.775391 20.2383C0.465495 19.263 0.310547 18.1556 0.310547 16.916C0.310547 15.8952 0.460938 14.9154 0.761719 13.9766C1.07161 13.0286 1.5 12.1536 2.04688 11.3516C2.59375 10.5404 3.24544 9.81576 4.00195 9.17773C4.76758 8.5306 5.60156 7.99284 6.50391 7.56445C7.6888 7.01758 8.71875 6.33854 9.59375 5.52734C10.4688 4.71615 11.248 3.75911 11.9316 2.65625C12.1322 2.33724 12.3418 2.04557 12.5605 1.78125C12.7884 1.50781 13.0391 1.27539 13.3125 1.08398C13.5859 0.892578 13.8867 0.746745 14.2148 0.646484C14.543 0.537109 14.9076 0.482422 15.3086 0.482422C15.7552 0.482422 16.1927 0.56901 16.6211 0.742188C17.0586 0.90625 17.446 1.13411 17.7832 1.42578C18.1204 1.71745 18.3893 2.0638 18.5898 2.46484C18.7995 2.86589 18.9043 3.30339 18.9043 3.77734C18.9043 4.08724 18.8633 4.38802 18.7812 4.67969C18.6992 4.96224 18.5944 5.24023 18.4668 5.51367C18.3392 5.78711 18.1934 6.05599 18.0293 6.32031C17.8743 6.57552 17.7194 6.83073 17.5645 7.08594H25.8223C26.0866 7.08594 26.3372 7.09961 26.5742 7.12695C26.8112 7.1543 27.0527 7.20898 27.2988 7.29102C27.6543 7.41862 27.9824 7.59635 28.2832 7.82422C28.5931 8.05208 28.8574 8.31641 29.0762 8.61719C29.304 8.91797 29.4772 9.24609 29.5957 9.60156C29.7233 9.95703 29.7871 10.3262 29.7871 10.709C29.7871 10.9368 29.7507 11.1693 29.6777 11.4062C29.6139 11.6432 29.5228 11.8757 29.4043 12.1035C29.2858 12.3314 29.1491 12.5456 28.9941 12.7461C28.8392 12.9375 28.6797 13.1061 28.5156 13.252C28.1693 13.5527 27.7819 13.7852 27.3535 13.9492C26.9342 14.1133 26.4922 14.1953 26.0273 14.1953H23.9902C24.127 14.6055 24.1953 15.0293 24.1953 15.4668C24.1953 15.9681 24.0951 16.4421 23.8945 16.8887C23.694 17.3262 23.4023 17.709 23.0195 18.0371C23.2565 18.6113 23.375 19.1992 23.375 19.8008C23.375 20.3294 23.2656 20.8262 23.0469 21.291C22.8372 21.7559 22.5228 22.1523 22.1035 22.4805C22.1764 22.7357 22.2357 22.9909 22.2812 23.2461C22.3268 23.5104 22.3496 23.7747 22.3496 24.0391V24.1484C22.2858 24.6406 22.1354 25.1009 21.8984 25.5293C21.6615 25.9577 21.3652 26.3314 21.0098 26.6504C20.6543 26.9694 20.2487 27.2201 19.793 27.4023C19.3464 27.5846 18.8724 27.6758 18.3711 27.6758ZM17.2363 22.959C16.9629 22.959 16.7305 22.8633 16.5391 22.6719C16.3477 22.4805 16.252 22.248 16.252 21.9746C16.252 21.7103 16.3477 21.4824 16.5391 21.291C16.7396 21.0996 16.972 21.0039 17.2363 21.0039H20.8184C21.0007 20.8398 21.1465 20.6484 21.2559 20.4297C21.3743 20.2018 21.4336 19.9603 21.4336 19.7051C21.4336 19.3132 21.3288 18.9577 21.1191 18.6387H18.4805C18.2161 18.6387 17.9837 18.543 17.7832 18.3516C17.5918 18.151 17.4961 17.9186 17.4961 17.6543C17.4961 17.3809 17.5918 17.1484 17.7832 16.957C17.9746 16.7656 18.207 16.6699 18.4805 16.6699H21.5977C21.8438 16.515 22.0124 16.319 22.1035 16.082C22.1947 15.8451 22.2402 15.5898 22.2402 15.3164C22.2402 15.207 22.222 15.0931 22.1855 14.9746C22.1582 14.847 22.1126 14.724 22.0488 14.6055C21.985 14.487 21.9121 14.3867 21.8301 14.3047C21.748 14.2135 21.6523 14.1452 21.543 14.0996C21.3971 14.0905 21.1647 14.0677 20.8457 14.0312C20.5267 13.9948 20.1667 13.9447 19.7656 13.8809C19.3737 13.8171 18.9681 13.7396 18.5488 13.6484C18.1296 13.5573 17.7467 13.4525 17.4004 13.334C17.054 13.2064 16.7669 13.0651 16.5391 12.9102C16.3203 12.7552 16.2109 12.582 16.2109 12.3906C16.2109 12.2539 16.2565 12.14 16.3477 12.0488C16.4479 11.9577 16.5664 11.9121 16.7031 11.9121H24.9336C25.3438 11.9121 25.7493 11.8939 26.1504 11.8574C26.5514 11.8118 26.9525 11.7389 27.3535 11.6387C27.3991 11.5931 27.4492 11.5339 27.5039 11.4609C27.5586 11.3789 27.6087 11.2969 27.6543 11.2148C27.709 11.1237 27.75 11.0371 27.7773 10.9551C27.8138 10.8639 27.832 10.7819 27.832 10.709C27.832 10.4811 27.7819 10.2669 27.6816 10.0664C27.5814 9.85677 27.4447 9.67904 27.2715 9.5332C27.1074 9.37826 26.916 9.25977 26.6973 9.17773C26.4876 9.08659 26.2734 9.04102 26.0547 9.04102C24.332 9.04102 22.6139 9.04557 20.9004 9.05469C19.196 9.05469 17.4824 9.05469 15.7598 9.05469C15.4954 9.05469 15.2676 8.96354 15.0762 8.78125C14.8848 8.58984 14.7891 8.36198 14.7891 8.09766C14.7891 7.86979 14.8984 7.57812 15.1172 7.22266C15.3451 6.85807 15.5957 6.47526 15.8691 6.07422C16.1426 5.67318 16.3887 5.27214 16.6074 4.87109C16.8353 4.46094 16.9492 4.09635 16.9492 3.77734C16.9492 3.58594 16.8945 3.41276 16.7852 3.25781C16.6849 3.09375 16.5527 2.95247 16.3887 2.83398C16.2337 2.70638 16.0605 2.61068 15.8691 2.54688C15.6777 2.47396 15.4954 2.4375 15.3223 2.4375C15.0944 2.4375 14.8939 2.47396 14.7207 2.54688C14.5475 2.61979 14.3926 2.72005 14.2559 2.84766C14.1191 2.96615 13.9915 3.10742 13.873 3.27148C13.7637 3.42643 13.6543 3.59049 13.5449 3.76367C12.752 5.03971 11.8451 6.13802 10.8242 7.05859C9.80339 7.97917 8.60938 8.75391 7.24219 9.38281C6.51302 9.72917 5.8431 10.1621 5.23242 10.6816C4.62174 11.2012 4.09766 11.7845 3.66016 12.4316C3.22266 13.0788 2.88086 13.7852 2.63477 14.5508C2.39779 15.3073 2.2793 16.0957 2.2793 16.916C2.2793 17.9824 2.42057 18.9258 2.70312 19.7461C2.99479 20.5664 3.39583 21.2819 3.90625 21.8926C4.41667 22.5033 5.01823 23.0182 5.71094 23.4375C6.40365 23.8659 7.1556 24.2214 7.9668 24.5039C8.77799 24.7956 9.62565 25.0189 10.5098 25.1738C11.403 25.3379 12.3008 25.4564 13.2031 25.5293C14.1055 25.6113 14.9941 25.6615 15.8691 25.6797C16.7533 25.6979 17.5872 25.707 18.3711 25.707C18.5898 25.707 18.8132 25.6569 19.041 25.5566C19.278 25.4655 19.4967 25.3424 19.6973 25.1875C19.8978 25.0326 20.0618 24.8503 20.1895 24.6406C20.3171 24.431 20.3809 24.2077 20.3809 23.9707C20.3809 23.6152 20.3125 23.278 20.1758 22.959H17.2363Z"
+                    fill="white"
+                  />
+                </svg>
+                Apply Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- joining section -->
+      <section class="joinTeam-section section-padding">
+        <div class="container">
+          <div class="join-team" data-aos="fade-up">
+            <h4>Interested in joining the <span>Virtual Dot</span> team?</h4>
+            <h6>
+              Virtual Dot is a real-time collaboration infrastructure for
+              developers. A fully hosted solution and complete toolkit to
+              modularly embed collaborative experiences into your product in
+              just days, not months.
+            </h6>
+            <div class="btn-sections flex">
+              <a href="#" class="btn btn-blue">
+                Open positions: <span class="no">2</span>
+              </a>
+              <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-main" data-aos="fade-up">
+          <div class="footer-about">
+            <a href="#" class="footer-logo">
+              <img
+                src="./assets/images/logo.svg"
+                alt="footer logo"
+                width="155"
+                height="26"
+              />
+            </a>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              dictum aliquet accumsan porta lectus ridiculus in mattis. Netus
+              sodales in volutpat ullamcorper amet adipiscing fermentum.
+            </p>
+            <div class="social-links">
+              <ul class="social">
+                <li>
+                  <a href="#">
+                    <img
+                      src="./assets/images/social-icons/git.svg"
+                      alt="social image"
+                      width="20"
+                      height="20"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="./assets/images/social-icons/discord.svg"
+                      alt="social image"
+                      width="20"
+                      height="20"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="./assets/images/social-icons/twitter.svg"
+                      alt="social image"
+                      width="20"
+                      height="20"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="./assets/images/social-icons/linkedin.svg"
+                      alt="social image"
+                      width="20"
+                      height="20"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="./assets/images/social-icons/youtube.svg"
+                      alt="social image"
+                      width="20"
+                      height="20"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-navmenu">
+            <h6 class="footer-head">Company</h6>
+            <ul class="footer-menu">
+              <li><a href="/">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="#">What We Do</a></li>
+              <li><a href="./career.html">Careers</a></li>
+            </ul>
+          </div>
+          <div class="footer-navmenu">
+            <h6 class="footer-head">What we do</h6>
+            <ul class="footer-menu">
+              <li><a href="#">Our expertise</a></li>
+              <li><a href="#">Our solutions</a></li>
+              <li><a href="#">Other expertise</a></li>
+            </ul>
+          </div>
+          <div class="footer-navmenu">
+            <h6 class="footer-head">Resources</h6>
+            <ul class="footer-menu">
+              <li><a href="./contact.html">Connect</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
