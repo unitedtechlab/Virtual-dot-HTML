@@ -100,13 +100,13 @@ nav.navMenu.active ul.navList {
   width: 100%;
   left: 0;
   padding: 40px 0;
-  display: none;
+  display: none ;
 }
-@media screen and (min-width: 768px) {
-  .navList li.hasSubmenu:hover .submenu-wrapper {
-    display: block;
-  }
-}
+/* @media screen and (min-width: 768px) { */
+  .submenu-wrapper.open {
+    display: block ;
+  } 
+/* } */
 .submenu {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

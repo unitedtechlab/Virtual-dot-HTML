@@ -1,494 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Virtual Dot | What We Do</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/base.css" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-  </head>
-  <body>
-    <!-- header -->
-    <header class="header" id="header">
-      <div class="container">
-        <div class="header-main">
-          <div class="logo">
-            <a href="/">
-              <img
-                src="./assets/images/logo.svg"
-                alt="logo virtualDot"
-                width="155"
-                height="26"
-              />
-            </a>
-          </div>
-          <!-- navmenu -->
-          <button class="nav-btn" id="navbtn">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <nav class="navMenu" id="navbar">
-            <ul class="navList">
-              <li>
-                <a href="/">Home</a>
-              </li>
-              <li>
-                <a href="./about.html">About US</a>
-              </li>
-              <li class="hasSubmenu active">
-                <a href="#">What We Do</a>
-                <div class="submenu-wrapper">
-                  <div class="container">
-                    <div class="submenu">
-                      <div class="submenu-column">
-                        <div class="submenu-heading">
-                          <p>Our expertise</p>
-                          <span>
-                            We use data + AI to reveal actionable insights and
-                            guide decisions.
-                          </span>
-                        </div>
-                        <ul class="sub-menulist">
-                          <li>
-                            <a href="#">
-                              <img
-                                src="./assets/images/submenu/Data Science.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Data Science</p>
-                                <span>
-                                  We specialise in creating custom, scalable
-                                  data science solutions
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <img
-                                src="./assets/images/submenu/Representation.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Data Analytics</p>
-                                <span>
-                                  We often help clients who need to solve
-                                  complex analytic challenges
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <img
-                                src="./assets/images/submenu/Artificial Intelligence.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Artificial Intelligence</p>
-                                <span>
-                                  We use data + AI to reveal actionable insights
-                                  and guide decisions.
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <img
-                                src="./assets/images/submenu/Process.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Machine Learning</p>
-                                <span>
-                                  We use data + AI to reveal actionable insights
-                                  and guide decisions.
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <img
-                                src="./assets/images/submenu/learning.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Deep Learning</p>
-                                <span>
-                                  We use data + AI to reveal actionable insights
-                                  and guide decisions.
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                        </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virtual Dot | What We Do</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-main">
+        <div class="logo">
+          <a href="/">
+            <img src="./assets/images/logo.svg" alt="logo virtualDot" width="155" height="26" />
+          </a>
+        </div>
+        <!-- navmenu -->
+        <button class="nav-btn" id="navbtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="navMenu" id="navbar">
+          <ul class="navList">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="./about.html">About US</a>
+            </li>
+            <li class="hasSubmenu active">
+              <a href="#">What We Do</a>
+              <div class="submenu-wrapper">
+                <div class="container">
+                  <div class="submenu">
+                    <div class="submenu-column">
+                      <div class="submenu-heading">
+                        <p>Our expertise</p>
+                        <span>
+                          We use data + AI to reveal actionable insights and
+                          guide decisions.
+                        </span>
                       </div>
-                      <div class="submenu-column">
-                        <div class="submenu-heading">
-                          <p>Our solutions</p>
-                          <span>
-                            Building interactive tools, integrating information,
-                            and presenting insights to drive meaningful action.
-                          </span>
-                        </div>
-                        <ul class="sub-menulist">
-                          <li>
-                            <a href="#">
-                              <img
-                                src="./assets/images/submenu/Fraud Alert.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Fraud Detection</p>
-                                <span>
-                                  Algorithms for detecting anomalies and trends.
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <img
-                                src="./assets/images/submenu/Security.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Security</p>
-                                <span>
-                                  Actionable insights to visualise data, spot
-                                  patterns.
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <img
-                                src="./assets/images/submenu/Network Access.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Network Analysis</p>
-                                <span>
-                                  Analytics for security in essential
-                                  infrastructure.
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <img
-                                src="./assets/images/submenu/Health.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Health Intelligence</p>
-                                <span>
-                                  Identifying high-impact, targeted projects
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                        </ul>
+                      <ul class="sub-menulist">
+                        <li>
+                          <a href="#" data-section="data-science" id="menuItems-ds">
+                            <img src="./assets/images/submenu/Data Science.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Data Science</p>
+                              <span>
+                                We specialise in creating custom, scalable
+                                data science solutions
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-section="data-analytics" id="menuItems-da">
+                            <img src="./assets/images/submenu/Representation.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Data Analytics</p>
+                              <span>
+                                We often help clients who need to solve
+                                complex analytic challenges
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-section="artificial-intelligence" id="menuItems-ai">
+                            <img src="./assets/images/submenu/Artificial Intelligence.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Artificial Intelligence</p>
+                              <span>
+                                We use data + AI to reveal actionable insights
+                                and guide decisions.
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-section="machine-learning" id="menuItems-ml">
+                            <img src="./assets/images/submenu/Process.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Machine Learning</p>
+                              <span>
+                                We use data + AI to reveal actionable insights
+                                and guide decisions.
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-section="deep-learning" id="menuItems-dl">
+                            <img src="./assets/images/submenu/learning.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Deep Learning</p>
+                              <span>
+                                We use data + AI to reveal actionable insights
+                                and guide decisions.
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu-column">
+                      <div class="submenu-heading">
+                        <p>Our solutions</p>
+                        <span>
+                          Building interactive tools, integrating information,
+                          and presenting insights to drive meaningful action.
+                        </span>
                       </div>
-                      <div class="submenu-column">
-                        <div class="submenu-heading">
-                          <p>Other expertise</p>
-                          <span>
-                            Building interactive tools, integrating information,
-                            and presenting insights to drive meaningful action.
-                          </span>
-                        </div>
-                        <ul class="sub-menulist">
-                          <li>
-                            <a href="#">
-                              <img
-                                src="./assets/images/submenu/Design.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Design</p>
-                                <span>
-                                  Design thinking is the core of virtual dot.
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <img
-                                src="./assets/images/submenu/Development.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Development</p>
-                                <span> The creation of web applications </span>
-                              </div>
-                            </a>
-                          </li>
-                        </ul>
+                      <ul class="sub-menulist">
+                        <li>
+                          <a href="#" data-section="fraud-detection" id="menuItems-fd">
+                            <img src="./assets/images/submenu/Fraud Alert.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Fraud Detection</p>
+                              <span>
+                                Algorithms for detecting anomalies and trends.
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-section="secruity" id="menuItems-security">
+                            <img src="./assets/images/submenu/Security.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Security</p>
+                              <span>
+                                Actionable insights to visualise data, spot
+                                patterns.
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-section="netwrok-analysis" id="menuItems-na">
+                            <img src="./assets/images/submenu/Network Access.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Network Analysis</p>
+                              <span>
+                                Analytics for security in essential
+                                infrastructure.
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-section="health-intelligence" id="menuItems-hi">
+                            <img src="./assets/images/submenu/Health.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Health Intelligence</p>
+                              <span>
+                                Identifying high-impact, targeted projects
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu-column">
+                      <div class="submenu-heading">
+                        <p>Other expertise</p>
+                        <span>
+                          Building interactive tools, integrating information,
+                          and presenting insights to drive meaningful action.
+                        </span>
                       </div>
+                      <ul class="sub-menulist">
+                        <li>
+                          <a href="#" data-section="design" id="menuItems-design">
+                            <img src="./assets/images/submenu/Design.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Design</p>
+                              <span>
+                                Design thinking is the core of virtual dot.
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-section="development" id="menuItems-development">
+                            <img src="./assets/images/submenu/Development.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Development</p>
+                              <span> The creation of web applications </span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-              </li>
-            </ul>
-            <ul class="navList">
-              <li>
-                <a href="./career.html">Careers</a>
-              </li>
-              <li>
-                <a href="./contact.html">Connect</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="navList">
+            <li>
+              <a href="./career.html">Careers</a>
+            </li>
+            <li>
+              <a href="./contact.html">Connect</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main class="main">
-      <!-- banner section -->
-      <section class="what-we-do-banner section-padding">
-        <div class="container">
-          <div class="whatwedo-wrapper" data-aos="fade-up">
-            <div class="whatwedo-shapes" id="banner-data"></div>
-          </div>
-        </div>
-        <div class="whatwedo-image-wrapper">
-          <div class="container">
-            <div class="whatwedo-banner-image" data-aos="fade-up"></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- our services section -->
-      <section class="transform-data-section section-padding">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="content-left" data-aos="fade-right"></div>
-            </div>
-            <div class="col-md-6">
-              <div class="values-wrapper" data-aos="fade-left"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- data process section -->
-      <section class="data-process-section section-padding">
-        <div class="container">
-          <div class="heading-data" data-aos="fade-up"></div>
-          <div class="process-wrapper" data-aos="fade-up"></div>
-        </div>
-      </section>
-
-      <!-- explore us section -->
-      <section class="explore-us-section section-padding" data-aos="fade-up">
-        <div class="container">
-          <div class="exploreus-wrapper">
-            <h3>
-              we explore trends and provide insights into how they will shape
-              the future of data science. We believe that by staying ahead of
-              these trends.
-            </h3>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- footer -->
-    <footer class="footer">
+  <main class="main">
+    <!-- banner section -->
+    <section class="what-we-do-banner section-padding">
       <div class="container">
-        <div class="footer-main" data-aos="fade-up">
-          <div class="footer-about">
-            <a href="#" class="footer-logo">
-              <img
-                src="./assets/images/logo.svg"
-                alt="footer logo"
-                width="155"
-                height="26"
-              />
-            </a>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              dictum aliquet accumsan porta lectus ridiculus in mattis. Netus
-              sodales in volutpat ullamcorper amet adipiscing fermentum.
-            </p>
-            <div class="social-links">
-              <ul class="social">
-                <li>
-                  <a href="#">
-                    <img
-                      src="./assets/images/social-icons/git.svg"
-                      alt="social image"
-                      width="20"
-                      height="20"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./assets/images/social-icons/discord.svg"
-                      alt="social image"
-                      width="20"
-                      height="20"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./assets/images/social-icons/twitter.svg"
-                      alt="social image"
-                      width="20"
-                      height="20"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./assets/images/social-icons/linkedin.svg"
-                      alt="social image"
-                      width="20"
-                      height="20"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./assets/images/social-icons/youtube.svg"
-                      alt="social image"
-                      width="20"
-                      height="20"
-                    />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer-navmenu">
-            <h6 class="footer-head">Company</h6>
-            <ul class="footer-menu">
-              <li><a href="/">Home</a></li>
-              <li><a href="./about.html">About</a></li>
-              <li><a href="#">What We Do</a></li>
-              <li><a href="./career.html">Careers</a></li>
-            </ul>
-          </div>
-          <div class="footer-navmenu">
-            <h6 class="footer-head">What we do</h6>
-            <ul class="footer-menu">
-              <li><a href="#">Our expertise</a></li>
-              <li><a href="#">Our solutions</a></li>
-              <li><a href="#">Other expertise</a></li>
-            </ul>
-          </div>
-          <div class="footer-navmenu">
-            <h6 class="footer-head">Resources</h6>
-            <ul class="footer-menu">
-              <li><a href="./contact.html">Connect</a></li>
-              <li><a href="#">Terms and Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
+        <div class="whatwedo-wrapper" data-aos="fade-up">
+          <div class="whatwedo-shapes" id="banner-data">
+
           </div>
         </div>
       </div>
-    </footer>
+      <div class="whatwedo-image-wrapper">
+        <div class="container">
+          <div class="whatwedo-banner-image" data-aos="fade-up"> </div>
+        </div>
+      </div>
+    </section>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <!-- our services section -->
+    <section class="transform-data-section section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="content-left" data-aos="fade-right"></div>
+          </div>
+          <div class="col-md-6">
+            <div class="values-wrapper" data-aos="fade-left"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script>
-      fetch("./assets/json/whatwedoData.json")
-        .then((res) => res.json())
-        .then((data) => {
-          data.forEach((item) => {
-            let subhead = item.banner[0].bannerSubhead;
-            let heading = item.banner[0].heading;
-            let description = item.banner[0].description;
-            document.querySelector("#banner-data").innerHTML += `
-                <span class='subhead'>${subhead}</span>
-                <h2>${heading}</h2>
-                <h6>${description}</h6>
+    <!-- data process section -->
+    <section class="data-process-section section-padding">
+      <div class="container">
+        <div class="heading-data" data-aos="fade-up"></div>
+        <div class="process-wrapper" data-aos="fade-up"></div>
+      </div>
+    </section>
+
+    <!-- explore us section -->
+    <section class="explore-us-section section-padding" data-aos="fade-up">
+      <div class="container">
+        <div class="exploreus-wrapper">
+          <h3>
+            we explore trends and provide insights into how they will shape
+            the future of data science. We believe that by staying ahead of
+            these trends.
+          </h3>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main" data-aos="fade-up">
+        <div class="footer-about">
+          <a href="#" class="footer-logo">
+            <img src="./assets/images/logo.svg" alt="footer logo" width="155" height="26" />
+          </a>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            dictum aliquet accumsan porta lectus ridiculus in mattis. Netus
+            sodales in volutpat ullamcorper amet adipiscing fermentum.
+          </p>
+          <div class="social-links">
+            <ul class="social">
+              <li>
+                <a href="#">
+                  <img src="./assets/images/social-icons/git.svg" alt="social image" width="20" height="20" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/images/social-icons/discord.svg" alt="social image" width="20" height="20" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/images/social-icons/twitter.svg" alt="social image" width="20" height="20" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/images/social-icons/linkedin.svg" alt="social image" width="20" height="20" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/images/social-icons/youtube.svg" alt="social image" width="20" height="20" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-navmenu">
+          <h6 class="footer-head">Company</h6>
+          <ul class="footer-menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="#">What We Do</a></li>
+            <li><a href="./career.html">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-navmenu">
+          <h6 class="footer-head">What we do</h6>
+          <ul class="footer-menu">
+            <li><a href="#">Our expertise</a></li>
+            <li><a href="#">Our solutions</a></li>
+            <li><a href="#">Other expertise</a></li>
+          </ul>
+        </div>
+        <div class="footer-navmenu">
+          <h6 class="footer-head">Resources</h6>
+          <ul class="footer-menu">
+            <li><a href="./contact.html">Connect</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuItems = {
+        'menuItems-ds': 'Data Science',
+        'menuItems-da': 'Data Analytics',
+        'menuItems-ai': 'Artificial Intelligence',
+        'menuItems-ml': 'Machine Learning',
+        'menuItems-dl': 'Deep Learning',
+        'menuItems-fd': 'Fraud Detection',
+        'menuItems-security': 'Security',
+        'menuItems-na': 'Network Analysis',
+        'menuItems-hi': 'Health Intelligence',
+        'menuItems-design': 'Design',
+        'menuItems-development': 'Development'
+      };
+
+      const fetchDataAndUpdateContent = (section) => {
+        fetch("./assets/json/whatwedoData.json")
+          .then((res) => res.json())
+          .then((data) => {
+            const sectionData = data.find(item => item[section])[section];
+            // Update banner
+            document.querySelector("#banner-data").innerHTML = `
+            <span class='subhead'>${sectionData.banner[0].bannerSubhead}</span>
+            <h2>${sectionData.banner[0].heading}</h2>
+            <h6>${sectionData.banner[0].description}</h6>
+          `;
+
+            // Update banner image
+            document.querySelector(".whatwedo-banner-image").innerHTML = `
+            <img src="${sectionData.bannerImage}" alt="banner image" />
+          `;
+
+            if (sectionData.application) {
+              // Update content left
+              const leftData = sectionData.application.leftData;
+              document.querySelector(".content-left").innerHTML = `
+              <span class='subhead blue'>${leftData.subhead}</span>
+              <h3>${leftData.heading}</h3>
+              <p>${leftData.description}</p>
             `;
 
-            let bannerImage = item.bannerImage;
-            document.querySelector(".whatwedo-banner-image").innerHTML += `
-                <img
-                src="${bannerImage}"
-                alt="banner image"
-                />
-            `;
-
-            if (item.application) {
-              let serviceSubhead = item.application.leftData.subhead;
-              let serviceHeading = item.application.leftData.heading;
-              let serviceContent = item.application.leftData.description;
-              document.querySelector(".content-left").innerHTML += `
-                <span class='subhead blue'>${serviceSubhead}</span>
-                <h3>${serviceHeading}</h3>
-                <p>${serviceContent}</p>
-            `;
-
-              if (item.application.servicesBoxes) {
-                item.application.servicesBoxes.forEach((serviceBox) => {
-                  let serviceImage = serviceBox.serviceImage;
-                  let serviceHead = serviceBox.serviceHead;
-                  let serviceDescription = serviceBox.serviceDescription;
-                  document.querySelector(".values-wrapper").innerHTML += `
-                    <div class="our-services-box">
-                        <img src="${serviceImage}" alt="Service Image">
-                        <p>${serviceHead}</p>
-                        <span>${serviceDescription}</p>
-                    </div>
-                `;
-                });
+              // Update values wrapper
+              if (sectionData.application.servicesBoxes) {
+                const servicesBoxes = sectionData.application.servicesBoxes;
+                document.querySelector(".values-wrapper").innerHTML = servicesBoxes.map(serviceBox => `
+                <div class="our-services-box">
+                  <img src="${serviceBox.serviceImage}" alt="Service Image">
+                  <p>${serviceBox.serviceHead}</p>
+                  <span>${serviceBox.serviceDescription}</p>
+                </div>
+              `).join('');
               }
             }
 
-            if (item.process) {
-              let processsubHead = item.process.header.subheading;
-              let processHeading = item.process.header.heading;
-              let processContent = item.process.header.content;
-              document.querySelector(".heading-data").innerHTML += `
-                    <span class='subhead blue'>${processsubHead}</span>
-                    <h3>${processHeading}</h3>
-                    <h5>${processContent}</h5>
-              `;
-
-              if (item.process.processBoxes) {
-                item.process.processBoxes.forEach((processBox) => {
-                  let processimg = processBox.processImage;
-                  let processheading = processBox.processHead;
-                  let processdata = processBox.processData;
-                  document.querySelector(".process-wrapper").innerHTML += `
-                    <div class="processes-box">
-                        <img src="${processimg}" alt="Service Image">
-                        <p>${processheading}</p>
-                        <span>${processdata}</p>
-                    </div>
-                `;
-                });
+            if (sectionData.process) {
+              const header = sectionData.process.header;
+              document.querySelector(".heading-data").innerHTML = `
+              <span class='subhead blue'>${header.subheading}</span>
+              <h3>${header.heading}</h3>
+              <h5>${header.content}</h5>
+            `;
+              if (sectionData.process.processBoxes) {
+                const processBoxes = sectionData.process.processBoxes;
+                document.querySelector(".process-wrapper").innerHTML = processBoxes.map(processBox => `
+                <div class="processes-box">
+                  <img src="${processBox.processImage}" alt="Service Image">
+                  <p>${processBox.processHead}</p>
+                  <span>${processBox.processData}</p>
+                </div>
+              `).join('');
               }
             }
-          });
-        })
-        .catch((error) => console.error("Error loading JSON file", error));
-    </script>
-  </body>
+          })
+          .catch((error) => console.error("Error loading JSON file", error));
+      };
+      fetchDataAndUpdateContent('Data Science');
+      const handleMenuClick = (event) => {
+        event.preventDefault();
+        const section = menuItems[event.target.id];
+        fetchDataAndUpdateContent(section);
+        history.pushState(null, '', `#${section}`);
+      };
+
+      Object.keys(menuItems).forEach(menuId => {
+        document.getElementById(menuId).addEventListener('click', handleMenuClick);
+      });
+      const updateContentFromUrl = () => {
+        const section = location.hash.replace('#', '') || 'data-science';
+        if (section) {
+          fetchDataAndUpdateContent(section);
+        }
+      };
+
+      window.addEventListener('popstate', updateContentFromUrl);
+      if (!location.hash) {
+        history.replaceState(null, '', '#data-science');
+      }
+      updateContentFromUrl();
+    });
+  </script>
+
+</body>
+
 </html>

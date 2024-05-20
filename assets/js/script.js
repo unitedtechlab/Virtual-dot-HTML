@@ -50,17 +50,20 @@ AOS.init({
 
 // submenu js
 const arrowButton = document.querySelectorAll("li.hasSubmenu");
-
+const subMenu = document.querySelector(".submenu-wrapper");
+const hasSubmenu = document.querySelector("li.hasSubmenu > a");
+ 
 arrowButton.forEach((el) =>
   el.addEventListener("click", (event) => {
-    const subMenu =
-      event.target.parentElement.querySelector(".submenu-wrapper");
     subMenu.classList.toggle("open");
-
-    const hasSubmenu =
-      event.target.parentElement.querySelector("li.hasSubmenu > a");
     hasSubmenu.classList.toggle("open");
   })
 );
-
-
+ 
+document.onclick = function (e) {
+  if (!subMenu.contains(e.target) && !hasSubmenu.contains(e.target)) {
+    subMenu.classList.remove("open");
+    hasSubmenu.classList.remove("open");
+  }
+};
+ 
