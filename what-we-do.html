@@ -423,9 +423,16 @@
           .catch((error) => console.error("Error loading JSON file", error));
       };
       fetchDataAndUpdateContent('Data Science');
+      Object.keys(menuItems).forEach(menuId => {
+        document.getElementById(menuId).addEventListener('click', (event) => {
+          event.preventDefault();
+          const section = menuItems[menuId];
+          fetchDataAndUpdateContent(section);
+        });
+      });
       const handleMenuClick = (event) => {
         event.preventDefault();
-        const section = menuItems[event.target.id];
+        const section = event.currentTarget.getAttribute('data-section');
         fetchDataAndUpdateContent(section);
         history.pushState(null, '', `#${section}`);
       };
@@ -441,13 +448,9 @@
       };
 
       window.addEventListener('popstate', updateContentFromUrl);
-      if (!location.hash) {
-        history.replaceState(null, '', '#data-science');
-      }
       updateContentFromUrl();
     });
   </script>
-
 </body>
 
 </html>
