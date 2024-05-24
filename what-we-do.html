@@ -43,8 +43,8 @@
                 <a href="./about.html">About US</a>
               </li>
               <li class="hasSubmenu active">
-                <a href="#">What We Do</a>
-                <div class="submenu-wrapper">
+                <a href="#" class="open">What We Do</a>
+                <div class="submenu-wrapper ">
                   <div class="container">
                     <div class="submenu">
                       <div class="submenu-column">
@@ -59,7 +59,7 @@
                           <li>
                             <a
                               href="#"
-                              data-section="data-science"
+                              data-section="Data_Science"
                               id="menuItems-ds"
                             >
                               <img
@@ -78,7 +78,7 @@
                           <li>
                             <a
                               href="#"
-                              data-section="data-analytics"
+                              data-section="Data_Analytics"
                               id="menuItems-da"
                             >
                               <img
@@ -97,7 +97,7 @@
                           <li>
                             <a
                               href="#"
-                              data-section="artificial-intelligence"
+                              data-section="Artificial_Intelligence"
                               id="menuItems-ai"
                             >
                               <img
@@ -116,7 +116,7 @@
                           <li>
                             <a
                               href="#"
-                              data-section="machine-learning"
+                              data-section="Machine_Learning"
                               id="menuItems-ml"
                             >
                               <img
@@ -135,7 +135,7 @@
                           <li>
                             <a
                               href="#"
-                              data-section="deep-learning"
+                              data-section="Deep_Learning"
                               id="menuItems-dl"
                             >
                               <img
@@ -165,7 +165,7 @@
                           <li>
                             <a
                               href="#"
-                              data-section="fraud-detection"
+                              data-section="Fraud_Detection"
                               id="menuItems-fd"
                             >
                               <img
@@ -202,7 +202,7 @@
                           <li>
                             <a
                               href="#"
-                              data-section="netwrok-analysis"
+                              data-section="Network_Analysis"
                               id="menuItems-na"
                             >
                               <img
@@ -221,7 +221,7 @@
                           <li>
                             <a
                               href="#"
-                              data-section="health-intelligence"
+                              data-section="Health_Intelligence"
                               id="menuItems-hi"
                             >
                               <img
@@ -457,124 +457,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="./what-we-do.js"></script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const menuItems = {
-          "menuItems-ds": "Data Science",
-          "menuItems-da": "Data Analytics",
-          "menuItems-ai": "Artificial Intelligence",
-          "menuItems-ml": "Machine Learning",
-          "menuItems-dl": "Deep Learning",
-          "menuItems-fd": "Fraud Detection",
-          "menuItems-security": "Security",
-          "menuItems-na": "Network Analysis",
-          "menuItems-hi": "Health Intelligence",
-          "menuItems-design": "Design",
-          "menuItems-development": "Development",
-        };
-
-        const fetchDataAndUpdateContent = (section) => {
-          fetch("./assets/json/whatwedoData.json")
-            .then((res) => res.json())
-            .then((data) => {
-              const sectionData = data.find((item) => item[section])[section];
-              // Update banner
-              document.querySelector("#banner-data").innerHTML = `
-            <span class='subhead'>${sectionData.banner[0].bannerSubhead}</span>
-            <h2>${sectionData.banner[0].heading}</h2>
-            <h6>${sectionData.banner[0].description}</h6>
-          `;
-
-              // Update banner image
-              document.querySelector(".whatwedo-banner-image").innerHTML = `
-            <img src="${sectionData.bannerImage}" alt="banner image" />
-          `;
-
-              if (sectionData.application) {
-                // Update content left
-                const leftData = sectionData.application.leftData;
-                document.querySelector(".content-left").innerHTML = `
-              <span class='subhead blue'>${leftData.subhead}</span>
-              <h3>${leftData.heading}</h3>
-              <p>${leftData.description}</p>
-            `;
-
-                // Update values wrapper
-                if (sectionData.application.servicesBoxes) {
-                  const servicesBoxes = sectionData.application.servicesBoxes;
-                  document.querySelector(".values-wrapper").innerHTML =
-                    servicesBoxes
-                      .map(
-                        (serviceBox) => `
-                <div class="our-services-box">
-                  <img src="${serviceBox.serviceImage}" alt="Service Image">
-                  <p>${serviceBox.serviceHead}</p>
-                  <span>${serviceBox.serviceDescription}</p>
-                </div>
-              `
-                      )
-                      .join("");
-                }
-              }
-
-              if (sectionData.process) {
-                const header = sectionData.process.header;
-                document.querySelector(".heading-data").innerHTML = `
-              <span class='subhead blue'>${header.subheading}</span>
-              <h3>${header.heading}</h3>
-              <h5>${header.content}</h5>
-            `;
-                if (sectionData.process.processBoxes) {
-                  const processBoxes = sectionData.process.processBoxes;
-                  document.querySelector(".process-wrapper").innerHTML =
-                    processBoxes
-                      .map(
-                        (processBox) => `
-                <div class="processes-box">
-                  <img src="${processBox.processImage}" alt="Service Image">
-                  <p>${processBox.processHead}</p>
-                  <span>${processBox.processData}</p>
-                </div>
-              `
-                      )
-                      .join("");
-                }
-              }
-            })
-            .catch((error) => console.error("Error loading JSON file", error));
-        };
-
-        // fetchDataAndUpdateContent("Data Science");
-        Object.keys(menuItems).forEach((menuId) => {
-          document.getElementById(menuId).addEventListener("click", (event) => {
-            event.preventDefault();
-            const section = menuItems[menuId];
-            fetchDataAndUpdateContent(section);
-          });
-        });
-        const handleMenuClick = (event) => {
-          event.preventDefault();
-          const section = event.currentTarget.getAttribute("data-section");
-          fetchDataAndUpdateContent(section);
-          history.pushState(null, "", `#${section}`);
-        };
-
-        Object.keys(menuItems).forEach((menuId) => {
-          document
-            .getElementById(menuId)
-            .addEventListener("click", handleMenuClick);
-        });
-        const updateContentFromUrl = () => {
-          const section = location.hash.replace("#", "") || "data-science";
-          if (section) {
-            fetchDataAndUpdateContent(section);
-          }
-        };
-
-        window.addEventListener("popstate", updateContentFromUrl);
-        updateContentFromUrl();
-      });
-    </script>
   </body>
 </html>

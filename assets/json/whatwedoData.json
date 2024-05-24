@@ -1,9 +1,9 @@
 [
   {
-    "Data Science": {
+    "Data_Science": {
       "id": "1",
-      "pageName": "Data Science",
-      "pageUrl": "/data-science",
+      "pageName": "Data_Science",
+      "pageUrl": "/Data_Science",
       "banner": [
         {
           "bannerSubhead": "Data Science",
@@ -91,10 +91,10 @@
         ]
       }
     },
-    "Data Analytics": {
+    "Data_Analytics": {
       "id": "2",
-      "pageName": "Data Analytics",
-      "pageUrl": "/data-analytics",
+      "pageName": "Data_Analytics",
+      "pageUrl": "/Data_Analytics",
       "banner": [
         {
           "bannerSubhead": "Data Analytics",
@@ -182,10 +182,10 @@
         ]
       }
     },
-    "Artificial Intelligence": {
+    "Artificial_Intelligence": {
       "id": "3",
       "pageName": "Artificial Intelligence",
-      "pageUrl": "/artificial-intelligence",
+      "pageUrl": "/Artificial_Intelligence",
       "banner": [
         {
           "bannerSubhead": "Artificial Intelligence",
@@ -273,10 +273,10 @@
         ]
       }
     },
-    "Machine Learning": {
+    "Machine_Learning": {
       "id": "3",
-      "pageName": "Machine Learning",
-      "pageUrl": "/artificial-intelligence",
+      "pageName": "Machine_Learning",
+      "pageUrl": "/Artificial_Intelligence",
       "banner": [
         {
           "bannerSubhead": "Machine Learning",
@@ -364,10 +364,10 @@
         ]
       }
     },
-    "Deep Learning": {
+    "Deep_Learning": {
       "id": "3",
-      "pageName": "Deep Learning",
-      "pageUrl": "/artificial-intelligence",
+      "pageName": "Deep_Learning",
+      "pageUrl": "/Artificial_Intelligence",
       "banner": [
         {
           "bannerSubhead": "Deep Learning",
@@ -455,10 +455,10 @@
         ]
       }
     },
-    "Fraud Detection": {
+    "Fraud_Detection": {
       "id": "3",
-      "pageName": "Fraud Detection",
-      "pageUrl": "/artificial-intelligence",
+      "pageName": "Fraud_Detection",
+      "pageUrl": "/Artificial_Intelligence",
       "banner": [
         {
           "bannerSubhead": "Fraud Detection",
@@ -549,7 +549,7 @@
     "Security": {
       "id": "3",
       "pageName": "Security",
-      "pageUrl": "/artificial-intelligence",
+      "pageUrl": "/artificial_intelligence",
       "banner": [
         {
           "bannerSubhead": "Security",
@@ -637,10 +637,10 @@
         ]
       }
     },
-    "Network Analysis": {
+    "Network_Analysis": {
       "id": "3",
-      "pageName": "Network Analysis",
-      "pageUrl": "/artificial-intelligence",
+      "pageName": "Network_Analysis",
+      "pageUrl": "/Artificial_Intelligence",
       "banner": [
         {
           "bannerSubhead": "Network Analysis",
@@ -728,10 +728,10 @@
         ]
       }
     },
-    "Health Intelligence": {
+    "Health_Intelligence": {
       "id": "3",
-      "pageName": "Health Intelligence",
-      "pageUrl": "/artificial-intelligence",
+      "pageName": "Health_Intelligence",
+      "pageUrl": "/Artificial_Intelligence",
       "banner": [
         {
           "bannerSubhead": "Health Intelligence",
@@ -913,7 +913,7 @@
     "Development": {
       "id": "3",
       "pageName": "Development",
-      "pageUrl": "/artificial-intelligence",
+      "pageUrl": "/Artificial_Intelligence",
       "banner": [
         {
           "bannerSubhead": "Development",
