@@ -52,18 +52,19 @@ AOS.init({
 const arrowButton = document.querySelectorAll("li.hasSubmenu");
 const subMenu = document.querySelector(".submenu-wrapper");
 const hasSubmenu = document.querySelector("li.hasSubmenu > a");
- 
+
 arrowButton.forEach((el) =>
   el.addEventListener("click", (event) => {
     subMenu.classList.toggle("open");
     hasSubmenu.classList.toggle("open");
   })
 );
- 
+
 document.onclick = function (e) {
   if (!subMenu.contains(e.target) && !hasSubmenu.contains(e.target)) {
     subMenu.classList.remove("open");
     hasSubmenu.classList.remove("open");
   }
 };
- 
+
+// what we do page script js
