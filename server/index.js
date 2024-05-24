@@ -18,6 +18,14 @@ app.post("/contactus", async (request, response) => {
         console.error('Error fetching products:', error);
     }
 })
+app.get("/career-jobpost", async (request, response) => {
+    try {
+
+    } catch (error) {
+
+    }
+})
+
 app.listen(getport, () => {
     console.log("Server is running on port", getport)
 })
