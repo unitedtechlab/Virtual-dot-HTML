@@ -1,10 +1,11 @@
 const mongoose = require('mongoose');
 
 require('dotenv').config();
-const uri = "mongodb://localhost:27017/virtualDot";
+// const uri = "mongodb://localhost:27017/virtualDot";
+const uri = 'mongodb+srv://abhilashag0801:dgKY1uvYSUgWgXRG@gadget.v0wrpvd.mongodb.net/virtualDot';
 
 const options = {
-    serverSelectionTimeoutMS: 10000, 
+    serverSelectionTimeoutMS: 10000,
 };
 
 // Connect to MongoDB
