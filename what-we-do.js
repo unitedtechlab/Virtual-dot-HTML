@@ -17,14 +17,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const fetchDataAndUpdateContent = async (section) => {
     try {
-      console.log("swwwss",section);
       const res = await fetch("./assets/json/whatwedoData.json");
       const data = await res.json();
-      console.log("sgs",data);
       const sectionData = data.find((item) => item[section])[section];
 
       // Update banner
-      console.log("fd",sectionData.banner[0].bannerSubhead);
       document.querySelector("#banner-data").innerHTML = `
         <span class='subhead'>${sectionData.banner[0].bannerSubhead}</span>
         <h2>${sectionData.banner[0].heading}</h2>
@@ -109,14 +106,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const updateContentFromUrl = () => {
     const section = location.hash.replace("#", "") || "Data_Science"; // Default section
     fetchDataAndUpdateContent(section);
-
-    // Reload the page if it hasn't been reloaded already and the URL contains "what-we-do.html"
-    if (!pageReloaded && location.href.includes("what-we-do.html")) {
-      pageReloaded = true;
-      setTimeout(() => {
-        location.reload();
-      }, 1);
-    }
   };
 
   window.addEventListener("popstate", updateContentFromUrl);
