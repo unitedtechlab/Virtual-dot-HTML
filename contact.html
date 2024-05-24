@@ -1,492 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Virtual Dot | Contact us</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/base.css" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-  </head>
-  <body>
-    <!-- header -->
-    <header class="header" id="header">
-      <div class="container">
-        <div class="header-main">
-          <div class="logo">
-            <a href="/">
-              <img
-                src="./assets/images/logo.svg"
-                alt="logo virtualDot"
-                width="155"
-                height="26"
-              />
-            </a>
-          </div>
-          <!-- navmenu -->
-          <button class="nav-btn" id="navbtn">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <nav class="navMenu" id="navbar">
-            <ul class="navList">
-              <li>
-                <a href="/">Home</a>
-              </li>
-              <li>
-                <a href="./about.html">About US</a>
-              </li>
-              <li class="hasSubmenu">
-                <a href="#">What We Do</a>
-                <div class="submenu-wrapper">
-                  <div class="container">
-                    <div class="submenu">
-                      <div class="submenu-column">
-                        <div class="submenu-heading">
-                          <p>Our expertise</p>
-                          <span>
-                            We use data + AI to reveal actionable insights and
-                            guide decisions.
-                          </span>
-                        </div>
-                        <ul class="sub-menulist">
-                          <li>
-                            <a
-                              href="#"
-                              data-section="Data_Science"
-                              id="menuItems-ds"
-                            >
-                              <img
-                                src="./assets/images/submenu/Data Science.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Data Science</p>
-                                <span>
-                                  We specialise in creating custom, scalable
-                                  data science solutions
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              data-section="Data_Analytics"
-                              id="menuItems-da"
-                            >
-                              <img
-                                src="./assets/images/submenu/Representation.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Data Analytics</p>
-                                <span>
-                                  We often help clients who need to solve
-                                  complex analytic challenges
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              data-section="Artificial_Intelligence"
-                              id="menuItems-ai"
-                            >
-                              <img
-                                src="./assets/images/submenu/Artificial Intelligence.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Artificial Intelligence</p>
-                                <span>
-                                  We use data + AI to reveal actionable insights
-                                  and guide decisions.
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              data-section="Machine_Learning"
-                              id="menuItems-ml"
-                            >
-                              <img
-                                src="./assets/images/submenu/Process.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Machine Learning</p>
-                                <span>
-                                  We use data + AI to reveal actionable insights
-                                  and guide decisions.
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              data-section="Deep_Learning"
-                              id="menuItems-dl"
-                            >
-                              <img
-                                src="./assets/images/submenu/learning.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Deep Learning</p>
-                                <span>
-                                  We use data + AI to reveal actionable insights
-                                  and guide decisions.
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                        </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virtual Dot | Contact us</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-main">
+        <div class="logo">
+          <a href="/">
+            <img src="./assets/images/logo.svg" alt="logo virtualDot" width="155" height="26" />
+          </a>
+        </div>
+        <!-- navmenu -->
+        <button class="nav-btn" id="navbtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="navMenu" id="navbar">
+          <ul class="navList">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="./about.html">About US</a>
+            </li>
+            <li class="hasSubmenu">
+              <a href="#">What We Do</a>
+              <div class="submenu-wrapper">
+                <div class="container">
+                  <div class="submenu">
+                    <div class="submenu-column">
+                      <div class="submenu-heading">
+                        <p>Our expertise</p>
+                        <span>
+                          We use data + AI to reveal actionable insights and
+                          guide decisions.
+                        </span>
                       </div>
-                      <div class="submenu-column">
-                        <div class="submenu-heading">
-                          <p>Our solutions</p>
-                          <span>
-                            Building interactive tools, integrating information,
-                            and presenting insights to drive meaningful action.
-                          </span>
-                        </div>
-                        <ul class="sub-menulist">
-                          <li>
-                            <a
-                              href="#"
-                              data-section="Fraud_Detection"
-                              id="menuItems-fd"
-                            >
-                              <img
-                                src="./assets/images/submenu/Fraud Alert.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Fraud Detection</p>
-                                <span>
-                                  Algorithms for detecting anomalies and trends.
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              data-section="secruity"
-                              id="menuItems-security"
-                            >
-                              <img
-                                src="./assets/images/submenu/Security.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Security</p>
-                                <span>
-                                  Actionable insights to visualise data, spot
-                                  patterns.
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              data-section="Network_Analysis"
-                              id="menuItems-na"
-                            >
-                              <img
-                                src="./assets/images/submenu/Network Access.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Network Analysis</p>
-                                <span>
-                                  Analytics for security in essential
-                                  infrastructure.
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              data-section="Health_Intelligence"
-                              id="menuItems-hi"
-                            >
-                              <img
-                                src="./assets/images/submenu/Health.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Health Intelligence</p>
-                                <span>
-                                  Identifying high-impact, targeted projects
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                        </ul>
+                      <ul class="sub-menulist">
+                        <li>
+                          <a href="#" data-section="Data_Science" id="menuItems-ds">
+                            <img src="./assets/images/submenu/Data Science.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Data Science</p>
+                              <span>
+                                We specialise in creating custom, scalable
+                                data science solutions
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-section="Data_Analytics" id="menuItems-da">
+                            <img src="./assets/images/submenu/Representation.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Data Analytics</p>
+                              <span>
+                                We often help clients who need to solve
+                                complex analytic challenges
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-section="Artificial_Intelligence" id="menuItems-ai">
+                            <img src="./assets/images/submenu/Artificial Intelligence.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Artificial Intelligence</p>
+                              <span>
+                                We use data + AI to reveal actionable insights
+                                and guide decisions.
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-section="Machine_Learning" id="menuItems-ml">
+                            <img src="./assets/images/submenu/Process.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Machine Learning</p>
+                              <span>
+                                We use data + AI to reveal actionable insights
+                                and guide decisions.
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-section="Deep_Learning" id="menuItems-dl">
+                            <img src="./assets/images/submenu/learning.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Deep Learning</p>
+                              <span>
+                                We use data + AI to reveal actionable insights
+                                and guide decisions.
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu-column">
+                      <div class="submenu-heading">
+                        <p>Our solutions</p>
+                        <span>
+                          Building interactive tools, integrating information,
+                          and presenting insights to drive meaningful action.
+                        </span>
                       </div>
-                      <div class="submenu-column">
-                        <div class="submenu-heading">
-                          <p>Other expertise</p>
-                          <span>
-                            Building interactive tools, integrating information,
-                            and presenting insights to drive meaningful action.
-                          </span>
-                        </div>
-                        <ul class="sub-menulist">
-                          <li>
-                            <a
-                              href="#"
-                              data-section="design"
-                              id="menuItems-design"
-                            >
-                              <img
-                                src="./assets/images/submenu/Design.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Design</p>
-                                <span>
-                                  Design thinking is the core of virtual dot.
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              data-section="development"
-                              id="menuItems-development"
-                            >
-                              <img
-                                src="./assets/images/submenu/Development.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Development</p>
-                                <span> The creation of web applications </span>
-                              </div>
-                            </a>
-                          </li>
-                        </ul>
+                      <ul class="sub-menulist">
+                        <li>
+                          <a href="#" data-section="Fraud_Detection" id="menuItems-fd">
+                            <img src="./assets/images/submenu/Fraud Alert.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Fraud Detection</p>
+                              <span>
+                                Algorithms for detecting anomalies and trends.
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-section="secruity" id="menuItems-security">
+                            <img src="./assets/images/submenu/Security.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Security</p>
+                              <span>
+                                Actionable insights to visualise data, spot
+                                patterns.
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-section="Network_Analysis" id="menuItems-na">
+                            <img src="./assets/images/submenu/Network Access.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Network Analysis</p>
+                              <span>
+                                Analytics for security in essential
+                                infrastructure.
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-section="Health_Intelligence" id="menuItems-hi">
+                            <img src="./assets/images/submenu/Health.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Health Intelligence</p>
+                              <span>
+                                Identifying high-impact, targeted projects
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu-column">
+                      <div class="submenu-heading">
+                        <p>Other expertise</p>
+                        <span>
+                          Building interactive tools, integrating information,
+                          and presenting insights to drive meaningful action.
+                        </span>
                       </div>
+                      <ul class="sub-menulist">
+                        <li>
+                          <a href="#" data-section="design" id="menuItems-design">
+                            <img src="./assets/images/submenu/Design.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Design</p>
+                              <span>
+                                Design thinking is the core of virtual dot.
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-section="development" id="menuItems-development">
+                            <img src="./assets/images/submenu/Development.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Development</p>
+                              <span> The creation of web applications </span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
-                </div>
-              </li>
-            </ul>
-            <ul class="navList">
-              <li>
-                <a href="./career.html">Careers</a>
-              </li>
-              <li class="active">
-                <a href="./contact.html">Connect</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-
-    <main class="main">
-      <!-- contact us section -->
-      <section class="contact-us section-padding">
-        <div class="container">
-          <div class="heading" data-aos="fade-up">
-            <h2>Contact us</h2>
-            <h5>Get in touch and let us know how we can help.</h5>
-          </div>
-
-          <!-- contact form -->
-          <div class="contact-form-wrapper">
-            <div class="row">
-              <div class="col-md-6" data-aos="fade-right">
-                <div class="contact-form">
-                  <h5>General enquiries</h5>
-                  <form id="contactform" method="POST">
-                    <div class="form-row">
-                      <label for="name">Name</label>
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        placeholder="Name"
-                        class="input-wrapper"
-                        required
-                      />
-                    </div>
-                    <div class="form-row">
-                      <label for="email">Email</label>
-                      <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="Email"
-                        class="input-wrapper"
-                        required
-                      />
-                    </div>
-                    <div class="form-row">
-                      <label for="message">Message</label>
-                      <textarea
-                        name="message"
-                        id="message"
-                        rows="5"
-                        class="input-wrapper"
-                      ></textarea>
-                    </div>
-                    <div class="form-btn">
-                      <input
-                        type="submit"
-                        value="Send message"
-                        class="btn btn-submit"
-                      />
-                    </div>
-                  </form>
                 </div>
               </div>
-              <div class="col-md-6" data-aos="fade-left">
-                <div class="contact-details">
-                  <div class="contact-data">
-                    <h6>Sales</h6>
-                    <p>We’d love to talk about how we can work together.</p>
-                    <a href="mailto:hello@virtualdot.com">
-                      hello@virtualdot.com
-                    </a>
+            </li>
+          </ul>
+          <ul class="navList">
+            <li>
+              <a href="./career.html">Careers</a>
+            </li>
+            <li class="active">
+              <a href="./contact.html">Connect</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- contact us section -->
+    <section class="contact-us section-padding">
+      <div class="container">
+        <div class="heading" data-aos="fade-up">
+          <h2>Contact us</h2>
+          <h5>Get in touch and let us know how we can help.</h5>
+        </div>
+
+        <!-- contact form -->
+        <div class="contact-form-wrapper">
+          <div class="row">
+            <div class="col-md-6" data-aos="fade-right">
+              <div class="contact-form">
+                <h5>General enquiries</h5>
+                <form id="contactform" method="POST" action="/contactus">
+                  <div class="form-row">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name" class="input-wrapper" required />
                   </div>
-                  <div class="contact-data">
-                    <h6>Support</h6>
-                    <p>We’re here to help with any questions you may have.</p>
-                    <a href="mailto:support@virtualdot.com">
-                      support@virtualdot.com
-                    </a>
+                  <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email" class="input-wrapper" required />
                   </div>
+                  <div class="form-row">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="5" class="input-wrapper"></textarea>
+                  </div>
+                  <div class="form-btn">
+                    <input type="submit" value="Send message" class="btn btn-submit" id="submitBtn" />
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-left">
+              <div class="contact-details">
+                <div class="contact-data">
+                  <h6>Sales</h6>
+                  <p>We’d love to talk about how we can work together.</p>
+                  <a href="mailto:hello@virtualdot.com">
+                    hello@virtualdot.com
+                  </a>
+                </div>
+                <div class="contact-data">
+                  <h6>Support</h6>
+                  <p>We’re here to help with any questions you may have.</p>
+                  <a href="mailto:support@virtualdot.com">
+                    support@virtualdot.com
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <!-- footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-main" data-aos="fade-up">
-          <div class="footer-about">
-            <a href="#" class="footer-logo">
-              <img
-                src="./assets/images/logo.svg"
-                alt="footer logo"
-                width="155"
-                height="26"
-              />
-            </a>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              dictum aliquet accumsan porta lectus ridiculus in mattis. Netus
-              sodales in volutpat ullamcorper amet adipiscing fermentum.
-            </p>
-            <div class="social-links">
-              <ul class="social">
-                <li>
-                  <a href="#">
-                    <img
-                      src="./assets/images/social-icons/git.svg"
-                      alt="social image"
-                      width="20"
-                      height="20"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./assets/images/social-icons/discord.svg"
-                      alt="social image"
-                      width="20"
-                      height="20"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./assets/images/social-icons/twitter.svg"
-                      alt="social image"
-                      width="20"
-                      height="20"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./assets/images/social-icons/linkedin.svg"
-                      alt="social image"
-                      width="20"
-                      height="20"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./assets/images/social-icons/youtube.svg"
-                      alt="social image"
-                      width="20"
-                      height="20"
-                    />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer-navmenu">
-            <h6 class="footer-head">Company</h6>
-            <ul class="footer-menu">
-              <li><a href="/">Home</a></li>
-              <li><a href="./about.html">About</a></li>
-              <li><a href="./what-we-do.html">What We Do</a></li>
-              <li><a href="./career.html">Careers</a></li>
-            </ul>
-          </div>
-          <div class="footer-navmenu">
-            <h6 class="footer-head">What we do</h6>
-            <ul class="footer-menu">
-              <li><a href="#">Our expertise</a></li>
-              <li><a href="#">Our solutions</a></li>
-              <li><a href="#">Other expertise</a></li>
-            </ul>
-          </div>
-          <div class="footer-navmenu">
-            <h6 class="footer-head">Resources</h6>
-            <ul class="footer-menu">
-              <li><a href="./contact.html">Connect</a></li>
-              <li><a href="#">Terms and Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main" data-aos="fade-up">
+        <div class="footer-about">
+          <a href="#" class="footer-logo">
+            <img src="./assets/images/logo.svg" alt="footer logo" width="155" height="26" />
+          </a>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            dictum aliquet accumsan porta lectus ridiculus in mattis. Netus
+            sodales in volutpat ullamcorper amet adipiscing fermentum.
+          </p>
+          <div class="social-links">
+            <ul class="social">
+              <li>
+                <a href="#">
+                  <img src="./assets/images/social-icons/git.svg" alt="social image" width="20" height="20" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/images/social-icons/discord.svg" alt="social image" width="20" height="20" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/images/social-icons/twitter.svg" alt="social image" width="20" height="20" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/images/social-icons/linkedin.svg" alt="social image" width="20" height="20" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/images/social-icons/youtube.svg" alt="social image" width="20" height="20" />
+                </a>
+              </li>
             </ul>
           </div>
         </div>
+        <div class="footer-navmenu">
+          <h6 class="footer-head">Company</h6>
+          <ul class="footer-menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./what-we-do.html">What We Do</a></li>
+            <li><a href="./career.html">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-navmenu">
+          <h6 class="footer-head">What we do</h6>
+          <ul class="footer-menu">
+            <li><a href="#">Our expertise</a></li>
+            <li><a href="#">Our solutions</a></li>
+            <li><a href="#">Other expertise</a></li>
+          </ul>
+        </div>
+        <div class="footer-navmenu">
+          <h6 class="footer-head">Resources</h6>
+          <ul class="footer-menu">
+            <li><a href="./contact.html">Connect</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./what-we-do.js"></script>
-    <script src="./assets/js/contactform.js"></script>
-    <script src="./assets/js/script.js"></script>
-  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./what-we-do.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js//contact.js"></script>
+</body>
+
 </html>
