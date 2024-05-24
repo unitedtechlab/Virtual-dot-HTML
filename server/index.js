@@ -20,7 +20,7 @@ app.post("/contactus", async (request, response) => {
 })
 app.get("/career-jobpost", async (request, response) => {
     try {
-
+        console.log("hello")
     } catch (error) {
 
     }
