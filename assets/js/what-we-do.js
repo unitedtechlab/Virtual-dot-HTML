@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   async function getAllJobPosts(section) {
+    console.log("section", section)
     try {
       const response = await fetch(`http://localhost:8000/whatwedo/${section}`, {
         method: "GET",
@@ -9,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       if (response.ok) {
         const jobs = await response.json();
+        console.log("jobs inside", jobs)
         return jobs;
       }
     } catch (error) {
@@ -30,10 +32,10 @@ document.addEventListener("DOMContentLoaded", () => {
     "menuItems-design": "Design",
     "menuItems-development": "Development",
   };
-
   const fetchDataAndUpdateContent = async (section) => {
     try {
       const sectionData = await getAllJobPosts(section);
+      if (!sectionData) return; 
       // Update banner
       document.querySelector("#banner-data").innerHTML = `
         <span class='subhead'>${sectionData.banner[0].bannerSubhead}</span>
@@ -103,6 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById(menuId).addEventListener("click", (event) => {
       event.preventDefault();
       const section = menuItems[menuId];
+      console.log("section", section)
       history.pushState(null, "", `./what-we-do.html#${section}`);
       fetchDataAndUpdateContent(section);
 
