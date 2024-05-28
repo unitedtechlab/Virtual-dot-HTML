@@ -3,7 +3,7 @@ const serverless = require("serverless-http");
 require("../models/config");
 require("dotenv").config();
 const cors = require("cors");
-const FormData = require("../models/User");
+const FormData = require("../models/config");
 
 const app = express();
 app.use(express.json());
