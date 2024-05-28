@@ -1,4 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
+  async function getAllJobPosts(section) {
+    try {
+      const response = await fetch(`http://localhost:8000/whatwedo/${section}`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        }
+      });
+      if (response.ok) {
+        const jobs = await response.json();
+        return jobs;
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  }
   let pageReloaded = false; // Flag to track if page has been reloaded
 
   const menuItems = {
@@ -17,10 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const fetchDataAndUpdateContent = async (section) => {
     try {
-      const res = await fetch("./assets/json/whatwedoData.json");
-      const data = await res.json();
-      const sectionData = data.find((item) => item[section])[section];
-
+      const sectionData = await getAllJobPosts(section);
       // Update banner
       document.querySelector("#banner-data").innerHTML = `
         <span class='subhead'>${sectionData.banner[0].bannerSubhead}</span>

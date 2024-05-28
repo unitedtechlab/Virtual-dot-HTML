@@ -8,6 +8,7 @@ app.use(cors());
 const getport = process.env.PORT;
 const FormData = require("./models/User");
 const JobFormField = require("./models/jobpost");
+var fs = require("fs");
 
 app.post("/contactus", async (request, response) => {
   try {
@@ -29,6 +30,7 @@ app.post("/contactus", async (request, response) => {
     console.error("Error fetching products:", error);
   }
 });
+//for career page
 app.get("/career-jobpost", async (request, response) => {
   try {
     let jobs = await JobFormField.find({ enable: "true" });
@@ -46,6 +48,18 @@ app.get("/career-job", async (request, response) => {
   let result = await JobFormField.findOne({ count: Number(request.query.id) });
   if (result) {
     response.status(200).send(result);
+  } else {
+    response.status(400).send({ result: "no result found" });
+  }
+});
+
+//For what we do page
+app.get("/whatwedo/:keyword", async (request, response) => {
+  var data = fs.readFileSync("json/whatwedoData.json");
+  var json_whatwedoData = JSON.parse(data);
+  const { keyword } = request.params;
+  if (json_whatwedoData[`${keyword}`]) {
+    response.status(200).send(json_whatwedoData[`${keyword}`]);
   } else {
     response.status(400).send({ result: "no result found" });
   }
