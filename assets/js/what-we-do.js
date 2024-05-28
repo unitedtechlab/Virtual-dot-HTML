@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   const fetchDataAndUpdateContent = async (section) => {
     if (section != "") {
+      console.log("section: ", section);
       try {
         const sectionData = await getAllJobPosts(section);
         if (!sectionData) return;
