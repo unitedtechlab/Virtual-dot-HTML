@@ -1,0 +1,264 @@
+/* -----admin panel -----*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.header {
+    /* background-color: #343a40; */
+    padding: 20px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 26px;
+}
+
+.navMenu {
+    display: flex;
+}
+
+.navMenu .navList {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navMenu .navList li {
+    margin-left: 20px;
+}
+
+.navMenu .navList li a {
+    color: rgba(25, 0, 65, 1);
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+}
+
+.navMenu .navList li.active a {
+    background-color: rgba(245, 241, 238, 1);
+    border-radius: 5px;
+}
+
+.logout {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: rgba(25, 0, 65, 1);
+}
+
+main {
+    padding: 20px;
+}
+
+.container-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    position: relative;
+    width: 507px;
+    gap: 12px;
+}
+
+.search-input {
+    width: 100%;
+    height: 35px;
+    padding: 0 15px 0 40px;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #343644;
+    width: 18px;
+    height: 18px;
+}
+
+.job-post-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.job-post-button:hover {
+    background-color: #0056b3;
+}
+
+.job-post-th,
+.job-post-tc {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr 1fr 2fr 3fr 1fr;
+    gap: 10px;
+}
+
+.job-app-th,
+.job-app-tc {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.contact-th,
+.contact-tc {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr 3fr;
+    gap: 10px;
+}
+
+.table-header {
+    padding: 10px;
+    background-color: rgba(255, 243, 225, 1);
+    color: rgba(52, 54, 68, 1);
+    border: 1px solid rgb(236, 222, 201);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.table-header div {
+    border-right: 2px solid rgb(236, 222, 201);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-header div:last-child {
+    border-right: none;
+}
+
+.table-content {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-top: none;
+    color: hsl(233, 13%, 24%);
+    display: grid;
+}
+
+.table-content div {
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.table-content div:nth-child(7n+1)::after,
+.table-content div:nth-child(7n+2)::after,
+.table-content div:nth-child(7n+3)::after,
+.table-content div:nth-child(7n+4)::after,
+.table-content div:nth-child(7n+5)::after,
+.table-content div:nth-child(7n+6)::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    right: 0;
+    width: 1.5px;
+    background-color: rgb(236, 222, 201);
+}
+
+.table-content div:nth-child(7n) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Skills section styling */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.skills span {
+    background-color: rgba(255, 243, 225, 1);
+    color: rgba(52, 54, 68, 1);
+    border: 1px solid rgb(236, 222, 201);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+/* Toggle switch styling */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #007bff;
+}
+
+input:checked+.slider:before {
+    transform: translateX(14px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
