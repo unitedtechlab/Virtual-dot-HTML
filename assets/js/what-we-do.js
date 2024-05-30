@@ -2,12 +2,15 @@ document.addEventListener("DOMContentLoaded", () => {
   async function getAllJobPosts(section) {
     if (section != "") {
       try {
-        const response = await fetch(`http://localhost:8000/whatwedo/${section}`, {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
+        const response = await fetch(
+          `http://localhost:8000/whatwedo/${section}`,
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+            },
           }
-        });
+        );
         if (response.ok) {
           const jobs = await response.json();
           return jobs;
@@ -34,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "menuItems-design": "Design",
     "menuItems-development": "Development",
   };
+
   const fetchDataAndUpdateContent = async (section) => {
     if (section != "") {
       console.log("section: ", section);
@@ -133,5 +137,4 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("popstate", updateContentFromUrl);
   updateContentFromUrl();
   // }
-
 });
