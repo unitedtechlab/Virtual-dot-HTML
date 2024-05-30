@@ -8,7 +8,6 @@ body {
 }
 
 .header {
-    /* background-color: #343a40; */
     padding: 20px;
 }
 
@@ -57,6 +56,10 @@ body {
     border-radius: 5px;
     padding: 5px 10px;
     color: rgba(25, 0, 65, 1);
+}
+
+.logout:hover {
+    background-color: rgba(255, 243, 225, 1);
 }
 
 main {
@@ -115,28 +118,25 @@ main {
 .job-post-tc {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1.5fr 1fr 2fr 3fr 1fr;
-    gap: 10px;
 }
 
 .job-app-th,
 .job-app-tc {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
-    gap: 10px;
 }
 
 .contact-th,
 .contact-tc {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 2fr 3fr;
-    gap: 10px;
 }
 
 .table-header {
     padding: 10px;
     background-color: rgba(255, 243, 225, 1);
     color: rgba(52, 54, 68, 1);
-    border: 1px solid rgb(236, 222, 201);
+    border: 1px solid rgba(85, 86, 90, 0.12);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     font-family: Inter;
@@ -145,10 +145,12 @@ main {
 }
 
 .table-header div {
-    border-right: 2px solid rgb(236, 222, 201);
+    border-right: 2px solid rgba(85, 86, 90, 0.12);
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
+    position: relative;
 }
 
 .table-header div:last-child {
@@ -157,34 +159,64 @@ main {
 
 .table-content {
     background-color: #ffffff;
-    border: 1px solid #dee2e6;
+    border: 1px solid rgba(85, 86, 90, 0.12);
     border-top: none;
     color: hsl(233, 13%, 24%);
-    display: grid;
+    padding: 10px;
 }
 
 .table-content div {
-    padding: 10px;
-    border-bottom: 1px solid #dee2e6;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
     position: relative;
 }
 
-.table-content div:nth-child(7n+1)::after,
-.table-content div:nth-child(7n+2)::after,
-.table-content div:nth-child(7n+3)::after,
-.table-content div:nth-child(7n+4)::after,
-.table-content div:nth-child(7n+5)::after,
-.table-content div:nth-child(7n+6)::after {
+.job-post-tc div:nth-child(7n+1)::after,
+.job-post-tc div:nth-child(7n+2)::after,
+.job-post-tc div:nth-child(7n+3)::after,
+.job-post-tc div:nth-child(7n+4)::after,
+.job-post-tc div:nth-child(7n+5)::after,
+.job-post-tc div:nth-child(7n+6)::after {
     content: '';
     position: absolute;
     top: 15px;
     bottom: 15px;
     right: 0;
     width: 1.5px;
-    background-color: rgb(236, 222, 201);
+    background-color: rgba(85, 86, 90, 0.12);
+
+}
+
+.job-app-tc div:nth-child(7n+1)::after,
+.job-app-tc div:nth-child(7n+2)::after,
+.job-app-tc div:nth-child(7n+3)::after,
+.job-app-tc div:nth-child(7n+4)::after,
+.job-app-tc div:nth-child(7n+5)::after,
+.job-app-tc div:nth-child(7n+6)::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    bottom: 3px;
+    right: 0;
+    width: 1.5px;
+    background-color: rgba(85, 86, 90, 0.12);
+
+}
+
+.contact-tc div:nth-child(7n+1)::after,
+.contact-tc div:nth-child(7n+2)::after,
+.contact-tc div:nth-child(7n+3)::after,
+.contact-tc div:nth-child(7n+4)::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    bottom: 3px;
+    right: 0;
+    width: 1.5px;
+    background-color: rgba(85, 86, 90, 0.12);
+
 }
 
 .table-content div:nth-child(7n) {
@@ -209,7 +241,6 @@ main {
     font-size: 14px;
 }
 
-/* Toggle switch styling */
 .switch {
     position: relative;
     display: inline-block;
