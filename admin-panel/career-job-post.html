@@ -11,119 +11,283 @@
 </head>
 
 <body>
-    <header class="header" id="header">
-        <div class="container">
-            <div class="logo">
-                <a href="/">
-                    <img src="../assets/images/logo-black.svg" alt="logo virtualDot" width="155" height="26" />
-                </a>
+    <div class="main-container">
+        <header class="header" id="header">
+            <div class="container">
+                <div class="logo">
+                    <a href="/">
+                        <img src="../assets/images/logo-black.svg" alt="logo virtualDot" width="155" height="26" />
+                    </a>
+                </div>
+                <nav class="navMenu">
+                    <ul class="navList">
+                        <li><a href="./admin-contact.html">Contact</a></li>
+                        <li class="active"><a href="./career-job-post.html">Job Posting</a></li>
+                        <li><a href="./career-job-application.html">Job Applications</a></li>
+                    </ul>
+                </nav>
+                <div class="logout">
+                    Logout
+                </div>
             </div>
-            <nav class="navMenu">
-                <ul class="navList">
-                    <li><a href="./admin-contact.html">Contact</a></li>
-                    <li class="active"><a href="./career-job-post.html">Job Posting</a></li>
-                    <li><a href="./career-job-application.html">Job Applications</a></li>
-                </ul>
-            </nav>
-            <div class="logout">
-                Logout
+        </header>
+        <main>
+            <div class="container-2">
+                <div class="search-container">
+                    <img src="../assets/images/search-icon.svg" alt="" class="search-icon">
+                    <input type="text" placeholder="Search" class="search-input" id="searchInput"
+                        onkeyup="searchTable()">
+                </div>
+                <button class="job-post-button">Job Posting</button>
             </div>
-        </div>
-    </header>
-    <main>
-        <div class="container-2">
-            <div class="search-container">
-                <img src="../assets/images/search-icon.svg" alt="" class="search-icon">
-                <input type="text" placeholder="Search" class="search-input" id="searchInput" onkeyup="searchTable()">
-            </div>
-            <button class="job-post-button">Job Posting</button>
-        </div>
-        <table id="find">
-            <thead>
-                <tr class="table-header">
-                    <th>Job Name</th>
-                    <th>Job Type</th>
-                    <th>Work Experience</th>
-                    <th>Location</th>
-                    <th>Skills</th>
-                    <th>Job Description</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody id="jobTableBody">
-                <tr class="table-content">
-                    <td>Software Developer</td>
-                    <td>Part Time</td>
-                    <td>2 Years</td>
-                    <td>Ahmedabad</td>
-                    <td class="skills">
-                        <span>React</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JS</span>
-                        <span>Angular</span>
-                        <span>Python</span>
-                        <span>Oracle</span>
-                        <span>Figma</span>
-                    </td>
-                    <td>Lorem ipsum dolor sit amet consectetur. Condimentum sollicitudin ante posuere venenatis tempor
-                        risus augue.</td>
-                    <td>
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
-                    </td>
-                </tr>
-                <tr class="table-content">
-                    <td>Software Tester</td>
-                    <td>Part Time</td>
-                    <td>2 Years</td>
-                    <td>Ahmedabad</td>
-                    <td class="skills">
-                        <span>React</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JS</span>
-                        <span>Angular</span>
-                        <span>Python</span>
-                        <span>Oracle</span>
-                        <span>Figma</span>
-                    </td>
-                    <td>you will be responsible for reviewing and implementing systematic test plans. You will
-                        collaborate with software developers and project supports to determine project scope and
-                        requirements. Success in this role will be demonstrated by providing quality work output,
-                        screening for errors, and refining usability throughout the software development and
-                        implementation process</td>
-                    <td>
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
-                    </td>
-                </tr>
-                <tr class="table-content">
-                    <td>Designer</td>
-                    <td>Part Time</td>
-                    <td>2 Years</td>
-                    <td>Ahmedabad</td>
-                    <td class="skills">
-                        <span>Canava</span>
-                        <span>Figma</span>
-                    </td>
-                    <td>Designer job description includes the entire process of defining requirements, visualizing and
-                        creating graphics including illustrations, logos, layouts and photos. You’ll be the one to shape
-                        the visual aspects of websites, books, magazines, product packaging, exhibitions and more</td>
-                    <td>
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </main>
+            <table id="find">
+                <thead>
+                    <tr class="table-header">
+                        <th>Job Name</th>
+                        <th>Job Type</th>
+                        <th>Work Experience</th>
+                        <th>Location</th>
+                        <th>Skills</th>
+                        <th class="job-description">Job Description</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="jobTableBody">
+                    <tr class="table-content">
+                        <td>Software Developer 1</td>
+                        <td>Part Time</td>
+                        <td>2 Years</td>
+                        <td>Ahmedabad</td>
+                        <td class="skills">
+                            <span>React</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                            <span>Angular</span>
+                            <span>Python</span>
+                            <span>Oracle</span>
+                            <span>Figma</span>
+                        </td>
+                        <td class="job-description">Lorem ipsum dolor sit amet consectetur. Condimentum sollicitudin
+                            ante posuere venenatis
+                            tempor
+                            risus augue.</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr class="table-content">
+                        <td>Software Tester 2</td>
+                        <td>Part Time</td>
+                        <td>2 Years</td>
+                        <td>Ahmedabad</td>
+                        <td class="skills">
+                            <span>React</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                            <span>Angular</span>
+                            <span>Python</span>
+                            <span>Oracle</span>
+                            <span>Figma</span>
+                        </td>
+                        <td class="job-description">you will be responsible for reviewing and implementing systematic
+                            test plans. You will
+                            collaborate with software developers and project supports to determine project scope and
+                            requirements. Success in this role will be demonstrated by providing quality work output,
+                            screening for errors, and refining usability throughout the software development and
+                            implementation process</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr class="table-content">
+                        <td>Designer 3</td>
+                        <td>Part Time</td>
+                        <td>2 Years</td>
+                        <td>Ahmedabad</td>
+                        <td class="skills">
+                            <span>Canava</span>
+                            <span>Figma</span>
+                        </td>
+                        <td class="job-description">Designer job description includes the entire process of defining
+                            requirements, visualizing
+                            and
+                            creating graphics including illustrations, logos, layouts and photos. You’ll be the one to
+                            shape
+                            the visual aspects of websites, books, magazines, product packaging, exhibitions and more
+                        </td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr class="table-content">
+                        <td>Software Developer 4</td>
+                        <td>Part Time</td>
+                        <td>2 Years</td>
+                        <td>Ahmedabad</td>
+                        <td class="skills">
+                            <span>React</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                            <span>Angular</span>
+                            <span>Python</span>
+                            <span>Oracle</span>
+                            <span>Figma</span>
+                        </td>
+                        <td class="job-description">Lorem ipsum dolor sit amet consectetur. Condimentum sollicitudin
+                            ante posuere venenatis
+                            tempor
+                            risus augue.</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr class="table-content">
+                        <td>Software Tester 5</td>
+                        <td>Part Time</td>
+                        <td>2 Years</td>
+                        <td>Ahmedabad</td>
+                        <td class="skills">
+                            <span>React</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                            <span>Angular</span>
+                            <span>Python</span>
+                            <span>Oracle</span>
+                            <span>Figma</span>
+                        </td>
+                        <td class="job-description">you will be responsible for reviewing and implementing systematic
+                            test plans. You will
+                            collaborate with software developers and project supports to determine project scope and
+                            requirements. Success in this role will be demonstrated by providing quality work output,
+                            screening for errors, and refining usability throughout the software development and
+                            implementation process</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr class="table-content">
+                        <td>Designer 6</td>
+                        <td>Part Time</td>
+                        <td>2 Years</td>
+                        <td>Ahmedabad</td>
+                        <td class="skills">
+                            <span>Canava</span>
+                            <span>Figma</span>
+                        </td>
+                        <td class="job-description">Designer job description includes the entire process of defining
+                            requirements, visualizing
+                            and
+                            creating graphics including illustrations, logos, layouts and photos. You’ll be the one to
+                            shape
+                            the visual aspects of websites, books, magazines, product packaging, exhibitions and more
+                        </td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr class="table-content">
+                        <td>Software Developer 7</td>
+                        <td>Part Time</td>
+                        <td>2 Years</td>
+                        <td>Ahmedabad</td>
+                        <td class="skills">
+                            <span>React</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                            <span>Angular</span>
+                            <span>Python</span>
+                            <span>Oracle</span>
+                            <span>Figma</span>
+                        </td>
+                        <td class="job-description">Lorem ipsum dolor sit amet consectetur. Condimentum sollicitudin
+                            ante posuere venenatis
+                            tempor
+                            risus augue.</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr class="table-content">
+                        <td>Software Tester 8</td>
+                        <td>Part Time</td>
+                        <td>2 Years</td>
+                        <td>Ahmedabad</td>
+                        <td class="skills">
+                            <span>React</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                            <span>Angular</span>
+                            <span>Python</span>
+                            <span>Oracle</span>
+                            <span>Figma</span>
+                        </td>
+                        <td class="job-description">you will be responsible for reviewing and implementing systematic
+                            test plans. You will
+                            collaborate with software developers and project supports to determine project scope and
+                            requirements. Success in this role will be demonstrated by providing quality work output,
+                            screening for errors, and refining usability throughout the software development and
+                            implementation process</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr class="table-content">
+                        <td>Designer 9</td>
+                        <td>Part Time</td>
+                        <td>2 Years</td>
+                        <td>Ahmedabad</td>
+                        <td class="skills">
+                            <span>Canava</span>
+                            <span>Figma</span>
+                        </td>
+                        <td class="job-description">Designer job description includes the entire process of defining
+                            requirements, visualizing
+                            and
+                            creating graphics including illustrations, logos, layouts and photos. You’ll be the one to
+                            shape
+                            the visual aspects of websites, books, magazines, product packaging, exhibitions and more
+                        </td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
     <script src="../assets/js/admin.js"></script>
 </body>
 

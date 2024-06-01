@@ -8,71 +8,75 @@
 </head>
 
 <body>
-    <header class="header" id="header">
-        <div class="container">
-            <div class="logo">
-                <a href="/">
-                    <img src="../assets/images/logo-black.svg" alt="logo virtualDot" width="155" height="26" />
-                </a>
+    <div class="main-container">
+        <header class="header" id="header">
+            <div class="container">
+                <div class="logo">
+                    <a href="/">
+                        <img src="../assets/images/logo-black.svg" alt="logo virtualDot" width="155" height="26" />
+                    </a>
+                </div>
+                <nav class="navMenu">
+                    <ul class="navList">
+                        <li><a href="./admin-contact.html">Contact</a></li>
+                        <li><a href="./career-job-post.html">Job Posting</a></li>
+                        <li class="active"><a href="./career-job-application.html">Job Applications</a></li>
+                    </ul>
+                </nav>
+                <div class="logout">
+                    Logout
+                </div>
             </div>
-            <nav class="navMenu">
-                <ul class="navList">
-                    <li><a href="./admin-contact.html">Contact</a></li>
-                    <li><a href="./career-job-post.html">Job Posting</a></li>
-                    <li class="active"><a href="./career-job-application.html">Job Applications</a></li>
-                </ul>
-            </nav>
-            <div class="logout">
-                Logout
+        </header>
+        <main>
+            <div class="container-2">
+                <div class="search-container">
+                    <img src="../assets/images/search-icon.svg" alt="" class="search-icon">
+                    <input type="text" placeholder="Search" class="search-input" id="searchInput"
+                        onkeyup="searchTable()">
+                </div>
+                <button class="job-post-button">Job Posting</button>
             </div>
-        </div>
-    </header>
-    <main>
-        <div class="container-2">
-            <div class="search-container">
-                <img src="../assets/images/search-icon.svg" alt="" class="search-icon">
-                <input type="text" placeholder="Search" class="search-input" id="searchInput" onkeyup="searchTable()">
-            </div>
-            <button class="job-post-button">Job Posting</button>
-        </div>
-        <table id="find">
-            <thead>
-                <tr class="table-header">
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Work Experience</th>
-                    <th>Email Id</th>
-                    <th>Current CTC</th>
-                    <th>Expected CTC</th>
-                    <th>Resume</th>
-                </tr>
-            </thead>
-            <tbody id="jobTableBody">
-                <tr class="table-content">
-                    <td> Arun</td>
-                    <td>Data</td>
-                    <td>2 Years</td>
-                    <td>arundata@gmail.com</td>
-                    <td>10 LPA </td>
-                    <td>20 LPA</td>
-                    <td>
-                        <a href="../assets/images/gif/data-science.gif" download="resume">Resume1</a>
-                    </td>
-                </tr>
-                <tr class="table-content">
-                    <td> Virtual</td>
-                    <td>Dot</td>
-                    <td>2 Years</td>
-                    <td>virtualdot@gmail.com</td>
-                    <td>10 LPA </td>
-                    <td>20 LPA</td>
-                    <td>
-                        <a href="../assets/images/user.jpeg" download="resume">Resume2</a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </main>
+            <table id="find">
+                <thead>
+                    <tr class="table-header">
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Work Experience</th>
+                        <th>Email Id</th>
+                        <th>Current CTC</th>
+                        <th>Expected CTC</th>
+                        <th>Resume</th>
+                    </tr>
+                </thead>
+                <tbody id="jobTableBody">
+                    <tr class="table-content">
+                        <td> Arun</td>
+                        <td>Data</td>
+                        <td>2 Years</td>
+                        <td>arundata@gmail.com</td>
+                        <td>10 LPA </td>
+                        <td>20 LPA</td>
+                        <td>
+                            <a href="../assets/images/gif/data-science.gif" download="resume">Resume1</a>
+                        </td>
+                    </tr>
+                    <tr class="table-content">
+                        <td> Virtual</td>
+                        <td>Dot</td>
+                        <td>2 Years</td>
+                        <td>virtualdot@gmail.com</td>
+                        <td>10 LPA </td>
+                        <td>20 LPA</td>
+                        <td>
+                            <a href="../assets/images/user.jpeg" download="resume">Resume2</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
     <script src="../assets/js/admin.js"></script>
 </body>
+
 </html>
