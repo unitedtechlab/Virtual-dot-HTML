@@ -268,3 +268,40 @@ input:checked+.slider:before {
 /* .highlight {
     background-color: yellow;
 } */
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagination-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.pagination-controls {
+    display: flex;
+    align-items: center;
+}
+
+.pagination-controls span,
+.pagination-controls select,
+.pagination-controls input {
+    margin: 0 5px;
+}
+
+.pagination button {
+    padding: 2px, 4px, 2px, 4px;
+    background-color: rgba(247, 249, 252, 1);
+    border: 1px solid #d3d3d3;
+    border-radius: 6px;
+    color: black;
+    cursor: pointer;
+}
+
+.pagination button:disabled {
+    background-color: #e4e4e4;
+    cursor: not-allowed;
+}

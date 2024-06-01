@@ -286,6 +286,25 @@
                     </tr>
                 </tbody>
             </table>
+            <div class="pagination">
+                <div class="pagination-info">
+                    <span id="rowsInfo"></span>
+                </div>
+                <div class="pagination-controls">
+                    <span>Rows per page: </span>
+                    <select id="rowsPerPageSelect">
+                        <option value="3">3</option>
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                    </select>
+                    <button id="prevBtn">&lt;</button>
+                    <span id="currentPageInfo"></span>
+                    <button id="nextBtn">&gt;</button>
+                    <span>Jump to page: </span>
+                    <input type="number" id="jumpToPage" min="1" style="width: 50px;">
+                    <button id="jumpBtn">Go</button>
+                </div>
+            </div>
         </main>
     </div>
     <script src="../assets/js/admin.js"></script>
