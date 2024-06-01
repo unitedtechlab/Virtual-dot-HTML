@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../assets/css/admin.css" />
     <link rel="stylesheet" href="/DataTables/datatables.css" />
-    <script src="/DataTables/datatables.js"></script>
+    <link rel="stylesheet" href="cdn.datatables.net/2.0.8/css/dataTables.dataTables.min.css">
 </head>
 
 <body>
@@ -15,7 +15,7 @@
         <div class="container">
             <div class="logo">
                 <a href="/">
-                    <img src="../assets/images/logo.svg" alt="logo virtualDot" width="155" height="26" />
+                    <img src="../assets/images/logo-black.svg" alt="logo virtualDot" width="155" height="26" />
                 </a>
             </div>
             <nav class="navMenu">
@@ -34,13 +34,13 @@
         <div class="container-2">
             <div class="search-container">
                 <img src="../assets/images/search-icon.svg" alt="" class="search-icon">
-                <input type="text" placeholder="Search" class="search-input">
+                <input type="text" placeholder="Search" class="search-input" id="searchInput" onkeyup="searchTable()">
             </div>
             <button class="job-post-button">Job Posting</button>
         </div>
-        <!-- <table id="example" class="display" cellspacing="0" width="100%">
+        <table id="find">
             <thead>
-                <tr>
+                <tr class="table-header">
                     <th>Job Name</th>
                     <th>Job Type</th>
                     <th>Work Experience</th>
@@ -50,13 +50,14 @@
                     <th>Action</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
+            <tbody id="jobTableBody">
+                <tr class="table-content">
                     <td>Software Developer</td>
                     <td>Part Time</td>
                     <td>2 Years</td>
                     <td>Ahmedabad</td>
-                    <td><span>React</span>
+                    <td class="skills">
+                        <span>React</span>
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JS</span>
@@ -65,9 +66,8 @@
                         <span>Oracle</span>
                         <span>Figma</span>
                     </td>
-                    <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, maxime voluptates totam
-                        quibusdam sequi asperiores in et amet soluta consequatur quia esse hic omnis sint iste eius
-                        debitis temporibus animi! </td>
+                    <td>Lorem ipsum dolor sit amet consectetur. Condimentum sollicitudin ante posuere venenatis tempor
+                        risus augue.</td>
                     <td>
                         <label class="switch">
                             <input type="checkbox">
@@ -75,35 +75,13 @@
                         </label>
                     </td>
                 </tr>
-                <tr>
-                    <td>Software Designer</td>
+                <tr class="table-content">
+                    <td>Software Tester</td>
                     <td>Part Time</td>
                     <td>2 Years</td>
                     <td>Ahmedabad</td>
-                    <td><span>React</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JS</span>
-                        <span>Angular</span>
-                        <span>Python</span>
-                        <span>Figma</span>
-                    </td>
-                    <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, maxime voluptates totam
-                        quibusdam sequi asperiores in et amet soluta consequatur quia esse hic omnis sint iste eius
-                        debitis temporibus animi! </td>
-                    <td>
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Software Developer</td>
-                    <td>Part Time</td>
-                    <td>2 Years</td>
-                    <td>Ahmedabad</td>
-                    <td><span>React</span>
+                    <td class="skills">
+                        <span>React</span>
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JS</span>
@@ -112,9 +90,11 @@
                         <span>Oracle</span>
                         <span>Figma</span>
                     </td>
-                    <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, maxime voluptates totam
-                        quibusdam sequi asperiores in et amet soluta consequatur quia esse hic omnis sint iste eius
-                        debitis temporibus animi! </td>
+                    <td>you will be responsible for reviewing and implementing systematic test plans. You will
+                        collaborate with software developers and project supports to determine project scope and
+                        requirements. Success in this role will be demonstrated by providing quality work output,
+                        screening for errors, and refining usability throughout the software development and
+                        implementation process</td>
                     <td>
                         <label class="switch">
                             <input type="checkbox">
@@ -122,116 +102,18 @@
                         </label>
                     </td>
                 </tr>
-                <tr>
-                    <td>Software Designer</td>
+                <tr class="table-content">
+                    <td>Designer</td>
                     <td>Part Time</td>
                     <td>2 Years</td>
                     <td>Ahmedabad</td>
-                    <td><span>React</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JS</span>
-                        <span>Angular</span>
-                        <span>Python</span>
+                    <td class="skills">
+                        <span>Canava</span>
                         <span>Figma</span>
                     </td>
-                    <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, maxime voluptates totam
-                        quibusdam sequi asperiores in et amet soluta consequatur quia esse hic omnis sint iste eius
-                        debitis temporibus animi! </td>
-                    <td>
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Software Developer</td>
-                    <td>Part Time</td>
-                    <td>2 Years</td>
-                    <td>Ahmedabad</td>
-                    <td><span>React</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JS</span>
-                        <span>Angular</span>
-                        <span>Python</span>
-                        <span>Oracle</span>
-                        <span>Figma</span>
-                    </td>
-                    <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, maxime voluptates totam
-                        quibusdam sequi asperiores in et amet soluta consequatur quia esse hic omnis sint iste eius
-                        debitis temporibus animi! </td>
-                    <td>
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Software Designer</td>
-                    <td>Part Time</td>
-                    <td>2 Years</td>
-                    <td>Ahmedabad</td>
-                    <td><span>React</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JS</span>
-                        <span>Angular</span>
-                        <span>Python</span>
-                        <span>Figma</span>
-                    </td>
-                    <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, maxime voluptates totam
-                        quibusdam sequi asperiores in et amet soluta consequatur quia esse hic omnis sint iste eius
-                        debitis temporibus animi! </td>
-                    <td>
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Software Developer</td>
-                    <td>Part Time</td>
-                    <td>2 Years</td>
-                    <td>Ahmedabad</td>
-                    <td><span>React</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JS</span>
-                        <span>Angular</span>
-                        <span>Python</span>
-                        <span>Oracle</span>
-                        <span>Figma</span>
-                    </td>
-                    <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, maxime voluptates totam
-                        quibusdam sequi asperiores in et amet soluta consequatur quia esse hic omnis sint iste eius
-                        debitis temporibus animi! </td>
-                    <td>
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Software Designer</td>
-                    <td>Part Time</td>
-                    <td>2 Years</td>
-                    <td>Ahmedabad</td>
-                    <td><span>React</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JS</span>
-                        <span>Angular</span>
-                        <span>Python</span>
-                        <span>Figma</span>
-                    </td>
-                    <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, maxime voluptates totam
-                        quibusdam sequi asperiores in et amet soluta consequatur quia esse hic omnis sint iste eius
-                        debitis temporibus animi! </td>
+                    <td>Designer job description includes the entire process of defining requirements, visualizing and
+                        creating graphics including illustrations, logos, layouts and photos. You’ll be the one to shape
+                        the visual aspects of websites, books, magazines, product packaging, exhibitions and more</td>
                     <td>
                         <label class="switch">
                             <input type="checkbox">
@@ -240,85 +122,9 @@
                     </td>
                 </tr>
             </tbody>
-        </table> -->
-        <section>
-            <div class=" job-post-th table-header">
-                <div>Job Name</div>
-                <div>Job Type</div>
-                <div>Work Experience</div>
-                <div>Location</div>
-                <div>Skills</div>
-                <div>Job Description</div>
-                <div>Action</div>
-            </div>
-            <div>
-                <div class="job-post-tc table-content">
-                    <div>Software Developer</div>
-                    <div>Part Time</div>
-                    <div>2 Years</div>
-                    <div>Ahmedabad</div>
-                    <div class="skills">
-                        <span>React</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JS</span>
-                        <span>Angular</span>
-                        <span>Python</span>
-                        <span>Oracle</span>
-                        <span>Figma</span>
-                    </div>
-                    <div>Lorem ipsum dolor sit amet consectetur. Condimentum sollicitudin ante posuere venenatis tempor
-                        risus augue.</div>
-                    <div><label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label></div>
-                </div>
-
-                <div class="job-post-tc table-content">
-                    <div>Software Tester</div>
-                    <div>Part Time</div>
-                    <div>2 Years</div>
-                    <div>Ahmedabad</div>
-                    <div class="skills">
-                        <span>React</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JS</span>
-                        <span>Angular</span>
-                        <span>Python</span>
-                        <span>Oracle</span>
-                        <span>Figma</span>
-                    </div>
-                    <div>Lorem ipsum dolor sit amet consectetur. Condimentum sollicitudin ante posuere venenatis tempor
-                        risus augue.</div>
-                    <div><label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label></div>
-                </div>
-            </div>
-        </section>
+        </table>
     </main>
-    <script>
-        $(document).ready(function () {
-            var table = $('#example').DataTable({
-                select: false,
-                "columnDefs": [{
-                    className: "Name",
-                    "targets": [0],
-                    "visible": false,
-                    "searchable": false
-                }]
-            });
-            $('#example tbody').on('click', 'tr', function () {
-
-                alert(table.row(this).data()[0]);
-
-            });
-        });
-    </script>
-    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/admin.js"></script>
 </body>
 
 </html>
