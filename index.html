@@ -1,765 +1,575 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Virtual Dot | Home</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/base.css" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-  </head>
-  <body>
-    <!-- header -->
-    <header class="header" id="header">
-      <div class="container">
-        <div class="header-main">
-          <div class="logo">
-            <a href="/">
-              <img
-                src="./assets/images/logo.svg"
-                alt="logo virtualDot"
-                width="155"
-                height="26"
-              />
-            </a>
-          </div>
-          <!-- navmenu -->
-          <button class="nav-btn" id="navbtn">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <nav class="navMenu" id="navbar">
-            <ul class="navList">
-              <li class="active">
-                <a href="/">Home</a>
-              </li>
-              <li>
-                <a href="./about.html">About US</a>
-              </li>
-              <li class="hasSubmenu active">
-                <a href="#">What We Do</a>
-                <div class="submenu-wrapper">
-                  <div class="container">
-                    <div class="submenu">
-                      <div class="submenu-column">
-                        <div class="submenu-heading">
-                          <p>Our expertise</p>
-                          <span>
-                            We use data + AI to reveal actionable insights and
-                            guide decisions.
-                          </span>
-                        </div>
-                        <ul class="sub-menulist">
-                          <li>
-                            <a
-                              href="#"
-                              data-section="Data_Science"
-                              id="menuItems-ds"
-                            >
-                              <img
-                                src="./assets/images/submenu/Data Science.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Data Science</p>
-                                <span>
-                                  We specialise in creating custom, scalable
-                                  data science solutions
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              data-section="Data_Analytics"
-                              id="menuItems-da"
-                            >
-                              <img
-                                src="./assets/images/submenu/Representation.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Data Analytics</p>
-                                <span>
-                                  We often help clients who need to solve
-                                  complex analytic challenges
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              data-section="Artificial_Intelligence"
-                              id="menuItems-ai"
-                            >
-                              <img
-                                src="./assets/images/submenu/Artificial Intelligence.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Artificial Intelligence</p>
-                                <span>
-                                  We use data + AI to reveal actionable insights
-                                  and guide decisions.
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              data-section="Machine_Learning"
-                              id="menuItems-ml"
-                            >
-                              <img
-                                src="./assets/images/submenu/Process.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Machine Learning</p>
-                                <span>
-                                  We use data + AI to reveal actionable insights
-                                  and guide decisions.
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              data-section="Deep_Learning"
-                              id="menuItems-dl"
-                            >
-                              <img
-                                src="./assets/images/submenu/learning.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Deep Learning</p>
-                                <span>
-                                  We use data + AI to reveal actionable insights
-                                  and guide decisions.
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                        </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virtual Dot | Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-main">
+        <div class="logo">
+          <a href="/">
+            <img src="./assets/images/logo.svg" alt="logo virtualDot" width="155" height="26" />
+          </a>
+        </div>
+        <!-- navmenu -->
+        <button class="nav-btn" id="navbtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="navMenu" id="navbar">
+          <ul class="navList">
+            <li class="active">
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="./about.html">About US</a>
+            </li>
+            <li class="hasSubmenu active">
+              <a href="#">What We Do</a>
+              <div class="submenu-wrapper">
+                <div class="container">
+                  <div class="submenu">
+                    <div class="submenu-column">
+                      <div class="submenu-heading">
+                        <p>Our expertise</p>
+                        <span>
+                          We use data + AI to reveal actionable insights and
+                          guide decisions.
+                        </span>
                       </div>
-                      <div class="submenu-column">
-                        <div class="submenu-heading">
-                          <p>Our solutions</p>
-                          <span>
-                            Building interactive tools, integrating information,
-                            and presenting insights to drive meaningful action.
-                          </span>
-                        </div>
-                        <ul class="sub-menulist">
-                          <li>
-                            <a
-                              href="#"
-                              data-section="Fraud_Detection"
-                              id="menuItems-fd"
-                            >
-                              <img
-                                src="./assets/images/submenu/Fraud Alert.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Fraud Detection</p>
-                                <span>
-                                  Algorithms for detecting anomalies and trends.
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              data-section="secruity"
-                              id="menuItems-security"
-                            >
-                              <img
-                                src="./assets/images/submenu/Security.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Security</p>
-                                <span>
-                                  Actionable insights to visualise data, spot
-                                  patterns.
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              data-section="Network_Analysis"
-                              id="menuItems-na"
-                            >
-                              <img
-                                src="./assets/images/submenu/Network Access.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Network Analysis</p>
-                                <span>
-                                  Analytics for security in essential
-                                  infrastructure.
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              data-section="Health_Intelligence"
-                              id="menuItems-hi"
-                            >
-                              <img
-                                src="./assets/images/submenu/Health.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Health Intelligence</p>
-                                <span>
-                                  Identifying high-impact, targeted projects
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                        </ul>
+                      <ul class="sub-menulist">
+                        <li>
+                          <a href="#" data-section="Data_Science" id="menuItems-ds">
+                            <img src="./assets/images/submenu/Data Science.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Data Science</p>
+                              <span>
+                                We specialise in creating custom, scalable
+                                data science solutions
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-section="Data_Analytics" id="menuItems-da">
+                            <img src="./assets/images/submenu/Representation.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Data Analytics</p>
+                              <span>
+                                We often help clients who need to solve
+                                complex analytic challenges
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-section="Artificial_Intelligence" id="menuItems-ai">
+                            <img src="./assets/images/submenu/Artificial Intelligence.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Artificial Intelligence</p>
+                              <span>
+                                We use data + AI to reveal actionable insights
+                                and guide decisions.
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-section="Machine_Learning" id="menuItems-ml">
+                            <img src="./assets/images/submenu/Process.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Machine Learning</p>
+                              <span>
+                                We use data + AI to reveal actionable insights
+                                and guide decisions.
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-section="Deep_Learning" id="menuItems-dl">
+                            <img src="./assets/images/submenu/learning.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Deep Learning</p>
+                              <span>
+                                We use data + AI to reveal actionable insights
+                                and guide decisions.
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu-column">
+                      <div class="submenu-heading">
+                        <p>Our solutions</p>
+                        <span>
+                          Building interactive tools, integrating information,
+                          and presenting insights to drive meaningful action.
+                        </span>
                       </div>
-                      <div class="submenu-column">
-                        <div class="submenu-heading">
-                          <p>Other expertise</p>
-                          <span>
-                            Building interactive tools, integrating information,
-                            and presenting insights to drive meaningful action.
-                          </span>
-                        </div>
-                        <ul class="sub-menulist">
-                          <li>
-                            <a
-                              href="#"
-                              data-section="design"
-                              id="menuItems-design"
-                            >
-                              <img
-                                src="./assets/images/submenu/Design.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Design</p>
-                                <span>
-                                  Design thinking is the core of virtual dot.
-                                </span>
-                              </div>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="#"
-                              data-section="development"
-                              id="menuItems-development"
-                            >
-                              <img
-                                src="./assets/images/submenu/Development.svg"
-                                alt="submenu icon"
-                              />
-                              <div class="menu-text">
-                                <p>Development</p>
-                                <span> The creation of web applications </span>
-                              </div>
-                            </a>
-                          </li>
-                        </ul>
+                      <ul class="sub-menulist">
+                        <li>
+                          <a href="#" data-section="Fraud_Detection" id="menuItems-fd">
+                            <img src="./assets/images/submenu/Fraud Alert.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Fraud Detection</p>
+                              <span>
+                                Algorithms for detecting anomalies and trends.
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-section="secruity" id="menuItems-security">
+                            <img src="./assets/images/submenu/Security.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Security</p>
+                              <span>
+                                Actionable insights to visualise data, spot
+                                patterns.
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-section="Network_Analysis" id="menuItems-na">
+                            <img src="./assets/images/submenu/Network Access.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Network Analysis</p>
+                              <span>
+                                Analytics for security in essential
+                                infrastructure.
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-section="Health_Intelligence" id="menuItems-hi">
+                            <img src="./assets/images/submenu/Health.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Health Intelligence</p>
+                              <span>
+                                Identifying high-impact, targeted projects
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="submenu-column">
+                      <div class="submenu-heading">
+                        <p>Other expertise</p>
+                        <span>
+                          Building interactive tools, integrating information,
+                          and presenting insights to drive meaningful action.
+                        </span>
                       </div>
+                      <ul class="sub-menulist">
+                        <li>
+                          <a href="#" data-section="design" id="menuItems-design">
+                            <img src="./assets/images/submenu/Design.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Design</p>
+                              <span>
+                                Design thinking is the core of virtual dot.
+                              </span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-section="development" id="menuItems-development">
+                            <img src="./assets/images/submenu/Development.svg" alt="submenu icon" />
+                            <div class="menu-text">
+                              <p>Development</p>
+                              <span> The creation of web applications </span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-              </li>
-            </ul>
-            <ul class="navList">
-              <li>
-                <a href="./career.html">Careers</a>
-              </li>
-              <li>
-                <a href="./contact.html">Connect</a>
-              </li>
-            </ul>
-          </nav>
+              </div>
+            </li>
+          </ul>
+          <ul class="navList">
+            <li>
+              <a href="./career.html">Careers</a>
+            </li>
+            <li>
+              <a href="./contact.html">Connect</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- banner section -->
+    <section class="banner-section section-padding">
+      <div class="container">
+        <div class="banner-content">
+          <div class="banner-text" data-aos="fade-down">
+            <h1>
+              <span>Unlock the power of your</span>
+              <span class="text-right">data with our customised</span>
+              <span>engineering and AI services</span>
+            </h1>
+          </div>
+          <div class="banner-shape" data-aos="fade-down">
+            <div class="shape-img"></div>
+          </div>
+        </div>
+        <div class="banner-btn-text" data-aos="fade-up">
+          <h5>
+            virtual dot provides developers with a complete toolkit to embed
+            performant collaboration features to your product remarkably fast.
+          </h5>
+          <div class="btn-sections flex">
+            <a href="#" class="btn btn-primary">
+              Learn more
+              <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.7005 10L6.7385 9.046L10.0785 5.696H0.6875V4.304H10.0795L6.7375 0.96L7.7005 0L12.6875 5L7.7005 10Z"
+                  fill="#03000A" />
+              </svg>
+            </a>
+            <a href="#" class="btn btn-secondary"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.1875 5L0.6875 10V0L9.1875 5Z" fill="#F7F7F8" />
+              </svg>
+              Watch video
+            </a>
+          </div>
+        </div>
+        <div class="logo-wrapper" data-aos="fade-up">
+          <ul class="flex">
+            <li>
+              <img src="./assets/images/home-logos/dialogue.svg" alt="logos" />
+            </li>
+            <li>
+              <img src="./assets/images/home-logos/runway.svg" alt="logos" />
+            </li>
+            <li>
+              <img src="./assets/images/home-logos/propeller.svg" alt="logos" />
+            </li>
+          </ul>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main class="main">
-      <!-- banner section home-->
-      <section class="banner-section section-padding">
-        <div class="container">
-          <div class="banner-content">
-            <div class="banner-text" data-aos="fade-down">
-              <h1>
-                <span>Unlock the power of your</span>
-                <span class="text-right">data with our customised</span>
-                <span>engineering and AI services</span>
-              </h1>
+    <!-- services section -->
+    <section class="services-section section-padding">
+      <div class="container">
+        <div class="heading" data-aos="fade-up">
+          <h2>Building blocks for collaboration</h2>
+          <h5>
+            <span>Add collaborative experiences you know and love like</span>
+            <span>
+              <u>text editors,</u> <u>forms,</u> <u>creative tools,</u> and
+              <u>whiteboards</u>
+            </span>
+            <span>with virtual dot APIs and tools.</span>
+          </h5>
+        </div>
+
+        <!-- services grid -->
+        <div class="services-grid-wrapper" data-aos="fade-up">
+          <div class="services-column one">
+            <div class="service-image">
+              <img src="./assets/images/gif/data-science.gif" alt="data science" />
             </div>
-            <div class="banner-shape" data-aos="fade-down">
-              <div class="shape-img"></div>
+            <div class="service-content">
+              <h5>Data Science</h5>
+              <p>
+                This involves providing strategic guidance and support to
+                organisations on how to best leverage data to achieve their
+                goals.
+              </p>
             </div>
           </div>
-          <div class="banner-btn-text" data-aos="fade-up">
-            <h5>
-              virtual dot provides developers with a complete toolkit to embed
-              performant collaboration features to your product remarkably fast.
-            </h5>
-            <div class="btn-sections flex">
-              <a href="#" class="btn btn-primary">
-                Learn more
-                <svg
-                  width="13"
-                  height="10"
-                  viewBox="0 0 13 10"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+          <div class="services-column two">
+            <div class="service-image">
+              <img src="./assets/images/gif/dataLearning.svg" alt="data science" />
+            </div>
+            <div class="service-content">
+              <h5>Data Learning</h5>
+              <p>
+                This involves providing strategic guidance and support to
+                organisations on how to best leverage data to achieve their
+                goals.
+              </p>
+            </div>
+          </div>
+          <div class="services-column three">
+            <div class="service-image">
+              <img src="./assets/images/gif/BusinessIntelligence.svg" alt="data science" />
+            </div>
+            <div class="service-content">
+              <h5>Business Intelligence</h5>
+              <p>
+                This involves providing strategic guidance and support to
+                organisations on how to best leverage data to achieve their
+                goals.
+              </p>
+            </div>
+          </div>
+          <div class="services-column four">
+            <div class="service-image">
+              <img src="./assets/images/gif/data_anaylysis.svg" alt="data science" />
+            </div>
+            <div class="service-content">
+              <h5>Data Analytics</h5>
+              <p>
+                This involves providing strategic guidance and support to
+                organisations on how to best leverage data to achieve their
+                goals.
+              </p>
+            </div>
+          </div>
+          <div class="services-column five">
+            <div class="service-image">
+              <img src="./assets/images/gif/Graph.svg" alt="data science" />
+            </div>
+            <div class="service-content">
+              <h5>Data Visualization</h5>
+              <p>
+                This involves providing strategic guidance and support to
+                organisations on how to best leverage data to achieve their
+                goals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- solution section -->
+    <section class="solution-section section-padding">
+      <div class="container">
+        <div class="row alinc">
+          <div class="col-md-6" data-aos="fade-right">
+            <div class="content-left">
+              <span class="subhead">Our solutions</span>
+              <h3>
+                Maximizing on-shelf availability (OSA) for CPGs with machine
+                learning
+              </h3>
+              <p>
+                On-shelf availability (OSA) is a crucial metric for consumer
+                packaged goods (CPGs) companies, as it measures the percentage
+                of time that a product is available for sale on the shelves of
+                a retail store. Low OSA can lead to lost sales, reduced
+                customer satisfaction, and damaged brand reputation. Machine
+                learning can help CPGs maximize OSA by predicting and
+                preventing out-of-stock situations.
+              </p>
+              <a href="#" class="btn btn-primary">Read the docs
+                <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M7.7005 10L6.7385 9.046L10.0785 5.696H0.6875V4.304H10.0795L6.7375 0.96L7.7005 0L12.6875 5L7.7005 10Z"
-                    fill="#03000A"
-                  />
+                    fill="#03000A" />
                 </svg>
               </a>
-              <a href="#" class="btn btn-secondary"
-                ><svg
-                  width="10"
-                  height="10"
-                  viewBox="0 0 10 10"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M9.1875 5L0.6875 10V0L9.1875 5Z" fill="#F7F7F8" />
-                </svg>
-                Watch video
-              </a>
             </div>
           </div>
-          <div class="logo-wrapper" data-aos="fade-up">
-            <ul class="flex">
-              <li>
-                <img
-                  src="./assets/images/home-logos/dialogue.svg"
-                  alt="logos"
-                />
-              </li>
-              <li>
-                <img src="./assets/images/home-logos/runway.svg" alt="logos" />
-              </li>
-              <li>
-                <img
-                  src="./assets/images/home-logos/propeller.svg"
-                  alt="logos"
-                />
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- services section -->
-      <section class="services-section section-padding">
-        <div class="container">
-          <div class="heading" data-aos="fade-up">
-            <h2>Building blocks for collaboration</h2>
-            <h5>
-              <span>Add collaborative experiences you know and love like</span>
-              <span>
-                <u>text editors,</u> <u>forms,</u> <u>creative tools,</u> and
-                <u>whiteboards</u>
-              </span>
-              <span>with virtual dot APIs and tools.</span>
-            </h5>
-          </div>
-
-          <!-- services grid -->
-          <div class="services-grid-wrapper" data-aos="fade-up">
-            <div class="services-column one">
-              <div class="service-image">
-                <img
-                  src="./assets/images/gif/data-science.gif"
-                  alt="data science"
-                />
-              </div>
-              <div class="service-content">
-                <h5>Data Science</h5>
-                <p>
-                  This involves providing strategic guidance and support to
-                  organisations on how to best leverage data to achieve their
-                  goals.
-                </p>
-              </div>
+          <div class="col-md-6" data-aos="fade-left">
+            <div class="content-right">
+              <img src="./assets/images/SDF.svg" alt="solutions" />
             </div>
-            <div class="services-column two">
-              <div class="service-image">
-                <img
-                  src="./assets/images/gif/dataLearning.svg"
-                  alt="data science"
-                />
-              </div>
-              <div class="service-content">
-                <h5>Data Learning</h5>
-                <p>
-                  This involves providing strategic guidance and support to
-                  organisations on how to best leverage data to achieve their
-                  goals.
-                </p>
-              </div>
-            </div>
-            <div class="services-column three">
-              <div class="service-image">
-                <img
-                  src="./assets/images/gif/BusinessIntelligence.svg"
-                  alt="data science"
-                />
-              </div>
-              <div class="service-content">
-                <h5>Business Intelligence</h5>
-                <p>
-                  This involves providing strategic guidance and support to
-                  organisations on how to best leverage data to achieve their
-                  goals.
-                </p>
-              </div>
-            </div>
-            <div class="services-column four">
-              <div class="service-image">
-                <img
-                  src="./assets/images/gif/data_anaylysis.svg"
-                  alt="data science"
-                />
-              </div>
-              <div class="service-content">
-                <h5>Data Analytics</h5>
-                <p>
-                  This involves providing strategic guidance and support to
-                  organisations on how to best leverage data to achieve their
-                  goals.
-                </p>
-              </div>
-            </div>
-            <div class="services-column five">
-              <div class="service-image">
-                <img src="./assets/images/gif/Graph.svg" alt="data science" />
-              </div>
-              <div class="service-content">
-                <h5>Data Visualization</h5>
-                <p>
-                  This involves providing strategic guidance and support to
-                  organisations on how to best leverage data to achieve their
-                  goals.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- solution section -->
-      <section class="solution-section section-padding">
-        <div class="container">
-          <div class="row alinc">
-            <div class="col-md-6" data-aos="fade-right">
-              <div class="content-left">
-                <span class="subhead">Our solutions</span>
-                <h3>
-                  Maximizing on-shelf availability (OSA) for CPGs with machine
-                  learning
-                </h3>
-                <p>
-                  On-shelf availability (OSA) is a crucial metric for consumer
-                  packaged goods (CPGs) companies, as it measures the percentage
-                  of time that a product is available for sale on the shelves of
-                  a retail store. Low OSA can lead to lost sales, reduced
-                  customer satisfaction, and damaged brand reputation. Machine
-                  learning can help CPGs maximize OSA by predicting and
-                  preventing out-of-stock situations.
-                </p>
-                <a href="#" class="btn btn-primary"
-                  >Read the docs
-                  <svg
-                    width="13"
-                    height="10"
-                    viewBox="0 0 13 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7.7005 10L6.7385 9.046L10.0785 5.696H0.6875V4.304H10.0795L6.7375 0.96L7.7005 0L12.6875 5L7.7005 10Z"
-                      fill="#03000A"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-6" data-aos="fade-left">
-              <div class="content-right">
-                <img src="./assets/images/SDF.svg" alt="solutions" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- testimonial section -->
-      <section class="testimonial-section section-padding">
-        <div class="container">
-          <div class="testimonial-wrapper" data-aos="fade-up">
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <div class="slide swiper-slide">
-                  <h4>
-                    Liveblocks enabled us to add real‑time presence to our
-                    application in hours instead of weeks and we don’t have to
-                    worry about maintenance. This is a no‑brainer for anyone
-                    building collaborative experiences.
-                  </h4>
-                  <div class="author">
-                    <img src="./assets/images/author.svg" alt="author" />
-                    <div class="author-data">
-                      <p class="name">Tom Giannattasio</p>
-                      <span>CEO of APD info-tech</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="slide swiper-slide">
-                  <h4>
-                    Liveblocks enabled us to add real‑time presence to our
-                    application in hours instead of weeks and we don’t have to
-                    worry about maintenance. This is a no‑brainer for anyone
-                    building collaborative experiences.
-                  </h4>
-                  <div class="author">
-                    <img src="./assets/images/author.svg" alt="author" />
-                    <div class="author-data">
-                      <p class="name">Tom Giannattasio</p>
-                      <span>CEO of APD info-tech</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- machine learning section -->
-      <section class="machine-learning-section section-padding">
-        <div class="container">
-          <div class="row alinc">
-            <div class="col-md-6" data-aos="fade-right">
-              <div class="content-left">
-                <span class="subhead"
-                  >machine learning and artificial intelligence</span
-                >
-                <h3>Application of machine learning and AI</h3>
-                <p>
-                  Discuss the different ways in which machine learning and
-                  artificial intelligence are being used today. For example, you
-                  could talk about how these technologies are used in
-                  healthcare, finance, and marketing.
-                </p>
-                <a href="#" class="btn btn-primary">
-                  Browse examples
-                  <svg
-                    width="13"
-                    height="10"
-                    viewBox="0 0 13 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7.7005 10L6.7385 9.046L10.0785 5.696H0.6875V4.304H10.0795L6.7375 0.96L7.7005 0L12.6875 5L7.7005 10Z"
-                      fill="#03000A"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-6" data-aos="fade-left">
-              <div class="service-boxes">
-                <div class="box">
-                  <img
-                    src="./assets/images/gif/box1.gif"
-                    width="50"
-                    height="50"
-                    alt="services images"
-                  />
-                  <p>Healthcare</p>
-                </div>
-                <div class="box">
-                  <img
-                    src="./assets/images/gif/box2.gif"
-                    width="50"
-                    height="50"
-                    alt="services images"
-                  />
-                  <p>Finance</p>
-                </div>
-                <div class="box">
-                  <img
-                    src="./assets/images/gif/box3.gif"
-                    width="50"
-                    height="50"
-                    alt="services images"
-                  />
-                  <p>Education</p>
-                </div>
-                <div class="box">
-                  <img
-                    src="./assets/images/gif/box4.gif"
-                    width="50"
-                    height="50"
-                    alt="services images"
-                  />
-                  <p>Retail</p>
-                </div>
-                <div class="box">
-                  <img
-                    src="./assets/images/gif/box5.gif"
-                    width="50"
-                    height="50"
-                    alt="services images"
-                  />
-                  <p>Manufacturing</p>
-                </div>
-                <div class="box">
-                  <img
-                    src="./assets/images/gif/box6.gif"
-                    width="50"
-                    height="50"
-                    alt="services images"
-                  />
-                  <p>Agriculture</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-main" data-aos="fade-up">
-          <div class="footer-about">
-            <a href="#" class="footer-logo">
-              <img
-                src="./assets/images/logo.svg"
-                alt="footer logo"
-                width="155"
-                height="26"
-              />
-            </a>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              dictum aliquet accumsan porta lectus ridiculus in mattis. Netus
-              sodales in volutpat ullamcorper amet adipiscing fermentum.
-            </p>
-            <div class="social-links">
-              <ul class="social">
-                <li>
-                  <a href="#">
-                    <img
-                      src="./assets/images/social-icons/git.svg"
-                      alt="social image"
-                      width="20"
-                      height="20"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./assets/images/social-icons/discord.svg"
-                      alt="social image"
-                      width="20"
-                      height="20"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./assets/images/social-icons/twitter.svg"
-                      alt="social image"
-                      width="20"
-                      height="20"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./assets/images/social-icons/linkedin.svg"
-                      alt="social image"
-                      width="20"
-                      height="20"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="./assets/images/social-icons/youtube.svg"
-                      alt="social image"
-                      width="20"
-                      height="20"
-                    />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer-navmenu">
-            <h6 class="footer-head">Company</h6>
-            <ul class="footer-menu">
-              <li><a href="/">Home</a></li>
-              <li><a href="./about.html">About</a></li>
-              <li><a href="#">What We Do</a></li>
-              <li><a href="./career.html">Careers</a></li>
-            </ul>
-          </div>
-          <div class="footer-navmenu">
-            <h6 class="footer-head">What we do</h6>
-            <ul class="footer-menu">
-              <li><a href="#">Our expertise</a></li>
-              <li><a href="#">Our solutions</a></li>
-              <li><a href="#">Other expertise</a></li>
-            </ul>
-          </div>
-          <div class="footer-navmenu">
-            <h6 class="footer-head">Resources</h6>
-            <ul class="footer-menu">
-              <li><a href="./contact.html">Connect</a></li>
-              <li><a href="#">Terms and Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/what-we-do.js"></script>
-  </body>
+    <!-- testimonial section -->
+    <section class="testimonial-section section-padding">
+      <div class="container">
+        <div class="testimonial-wrapper" data-aos="fade-up">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="slide swiper-slide">
+                <h4>
+                  Liveblocks enabled us to add real‑time presence to our
+                  application in hours instead of weeks and we don’t have to
+                  worry about maintenance. This is a no‑brainer for anyone
+                  building collaborative experiences.
+                </h4>
+                <div class="author">
+                  <img src="./assets/images/author.svg" alt="author" />
+                  <div class="author-data">
+                    <p class="name">Tom Giannattasio</p>
+                    <span>CEO of APD info-tech</span>
+                  </div>
+                </div>
+              </div>
+              <div class="slide swiper-slide">
+                <h4>
+                  Liveblocks enabled us to add real‑time presence to our
+                  application in hours instead of weeks and we don’t have to
+                  worry about maintenance. This is a no‑brainer for anyone
+                  building collaborative experiences.
+                </h4>
+                <div class="author">
+                  <img src="./assets/images/author.svg" alt="author" />
+                  <div class="author-data">
+                    <p class="name">Tom Giannattasio</p>
+                    <span>CEO of APD info-tech</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- machine learning section -->
+    <section class="machine-learning-section section-padding">
+      <div class="container">
+        <div class="row alinc">
+          <div class="col-md-6" data-aos="fade-right">
+            <div class="content-left">
+              <span class="subhead">machine learning and artificial intelligence</span>
+              <h3>Application of machine learning and AI</h3>
+              <p>
+                Discuss the different ways in which machine learning and
+                artificial intelligence are being used today. For example, you
+                could talk about how these technologies are used in
+                healthcare, finance, and marketing.
+              </p>
+              <a href="#" class="btn btn-primary">
+                Browse examples
+                <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.7005 10L6.7385 9.046L10.0785 5.696H0.6875V4.304H10.0795L6.7375 0.96L7.7005 0L12.6875 5L7.7005 10Z"
+                    fill="#03000A" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-left">
+            <div class="service-boxes">
+              <div class="box">
+                <img src="./assets/images/gif/box1.gif" width="50" height="50" alt="services images" />
+                <p>Healthcare</p>
+              </div>
+              <div class="box">
+                <img src="./assets/images/gif/box2.gif" width="50" height="50" alt="services images" />
+                <p>Finance</p>
+              </div>
+              <div class="box">
+                <img src="./assets/images/gif/box3.gif" width="50" height="50" alt="services images" />
+                <p>Education</p>
+              </div>
+              <div class="box">
+                <img src="./assets/images/gif/box4.gif" width="50" height="50" alt="services images" />
+                <p>Retail</p>
+              </div>
+              <div class="box">
+                <img src="./assets/images/gif/box5.gif" width="50" height="50" alt="services images" />
+                <p>Manufacturing</p>
+              </div>
+              <div class="box">
+                <img src="./assets/images/gif/box6.gif" width="50" height="50" alt="services images" />
+                <p>Agriculture</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main" data-aos="fade-up">
+        <div class="footer-about">
+          <a href="#" class="footer-logo">
+            <img src="./assets/images/logo.svg" alt="footer logo" width="155" height="26" />
+          </a>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            dictum aliquet accumsan porta lectus ridiculus in mattis. Netus
+            sodales in volutpat ullamcorper amet adipiscing fermentum.
+          </p>
+          <div class="social-links">
+            <ul class="social">
+              <li>
+                <a href="#">
+                  <img src="./assets/images/social-icons/git.svg" alt="social image" width="20" height="20" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/images/social-icons/discord.svg" alt="social image" width="20" height="20" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/images/social-icons/twitter.svg" alt="social image" width="20" height="20" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/images/social-icons/linkedin.svg" alt="social image" width="20" height="20" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/images/social-icons/youtube.svg" alt="social image" width="20" height="20" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-navmenu">
+          <h6 class="footer-head">Company</h6>
+          <ul class="footer-menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="#">What We Do</a></li>
+            <li><a href="./career.html">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-navmenu">
+          <h6 class="footer-head">What we do</h6>
+          <ul class="footer-menu">
+            <li><a href="#">Our expertise</a></li>
+            <li><a href="#">Our solutions</a></li>
+            <li><a href="#">Other expertise</a></li>
+          </ul>
+        </div>
+        <div class="footer-navmenu">
+          <h6 class="footer-head">Resources</h6>
+          <ul class="footer-menu">
+            <li><a href="./contact.html">Connect</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/what-we-do.js"></script>
+</body>
+
 </html>
