@@ -13,7 +13,6 @@ function searchTable() {
                 txtValue = td[j].textContent || td[j].innerText;
                 if (txtValue.toUpperCase().indexOf(filter) > -1) {
                     tr[i].style.display = "";
-                    // td[i].style.background = "blue"
                     break;
                 }
             }
