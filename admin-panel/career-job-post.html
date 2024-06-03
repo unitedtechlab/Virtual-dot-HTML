@@ -40,7 +40,7 @@
                 </div>
                 <button class="job-post-button">Job Posting</button>
             </div>
-            <table id="find">
+            <table id="find" class="table-class">
                 <thead>
                     <tr class="table-header">
                         <th>Job Name</th>
@@ -52,8 +52,8 @@
                         <th>Action</th>
                     </tr>
                 </thead>
-                <tbody id="jobTableBody">
-                    <tr class="table-content">
+                <tbody id="jobTableBody" style="height:100px;width:140px; overflow:auto;">
+                    <tr class=" table-content">
                         <td>Software Developer 1</td>
                         <td>Part Time</td>
                         <td>2 Years</td>
@@ -291,18 +291,25 @@
                     <span id="rowsInfo"></span>
                 </div>
                 <div class="pagination-controls">
-                    <span>Rows per page: </span>
-                    <select id="rowsPerPageSelect">
-                        <option value="3">3</option>
-                        <option value="5">5</option>
-                        <option value="10">10</option>
-                    </select>
-                    <button id="prevBtn">&lt;</button>
-                    <span id="currentPageInfo"></span>
-                    <button id="nextBtn">&gt;</button>
-                    <span>Jump to page: </span>
-                    <input type="number" id="jumpToPage" min="1" style="width: 50px;">
-                    <button id="jumpBtn">Go</button>
+                    <div class="rows-per-page">
+                        <span>Rows per page: </span>
+                        <select id="rowsPerPageSelect">
+                            <option value="3">3</option>
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="jump-to-page">
+                        <div>
+                            <span>Jump to </span>
+                            <input type="number" id="jumpToPage" min="1">
+                        </div>
+                        <div>
+                            <button id="prevBtn">&lt;</button>
+                            <span id="currentPageInfo"></span>
+                            <button id="nextBtn">&gt;</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
